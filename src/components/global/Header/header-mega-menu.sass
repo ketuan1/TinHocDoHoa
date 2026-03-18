@@ -1,0 +1,47 @@
+header
+	.header-menu
+		> li
+			&.menu-item-has-children
+				&:hover
+					> .mega-menu
+						@apply opacity-100 pointer-events-auto xl:translate-y-0
+						.sub-menu
+							li
+								&:hover
+									.mega-wrap
+										.walker-image
+											@apply opacity-100
+								&:first-child
+									.mega-wrap
+										.walker-image
+											@apply opacity-100
+	.mega-menu
+		@apply xl:absolute top-full left-1/2 xl:-translate-x-1/2 w-full -z-1 xl:bg-[#F5F5F5] xl:py-10 xl:rem:min-h-[550px]
+		@apply transition-all duration-300 xl:opacity-0 xl:-translate-y-10 pointer-events-none
+		@media (max-width: 1200px)
+			@apply transition-none
+		&.active
+			@apply block pointer-events-auto
+		> div
+			> .sub-menu
+				@apply relative
+				&::before
+					content: ''
+					@apply xl:fixed top-0 h-full w-px xl:bg-neutral-200 rem:left-[45%] z-10 pointer-events-none
+				> li
+					@apply rem:w-[607px] border-b-[#D9D9D9] border-b border-solid
+					a
+						@apply xl:pr-3
+					@media (max-width: 1200px)
+						@apply border-none w-full
+
+	.mega-wrap
+		@apply static xl:absolute top-0 rem:left-[780px] w-auto flex justify-between bg-[#F5F5F5]
+		@apply xl:opacity-100 transition-all duration-200 ease-in-out pointer-events-none
+		> .sub-menu
+			@apply flex-1 pl-25 px-10 gap-x-10 break-before-avoid
+		.walker-image
+			@apply hidden xl:block xl:opacity-0 xl:absolute top-0 left-0 transition-opacity duration-200
+			img
+				@apply rem:w-[612px] rem:h-[406px]
+				@apply block object-cover

@@ -1,0 +1,31 @@
+.section-home-7
+	.box-item
+		@apply relative
+		&:nth-child(2)
+			.item
+				.content
+					span,
+					.desc,
+					.btn
+						@apply hidden xl:block
+		.item
+			@apply relative duration-300 transition-all
+			.btn-primary
+				@apply flex #{!important}
+			&::before
+				background: linear-gradient(180deg, rgba(8, 19, 78, 0) 7.46%, #000 100%)
+				content: ""
+				@apply absolute-full opacity-0 z-10
+			&:hover
+				&::before
+					@apply opacity-100
+				.content
+					@apply opacity-100 visible translate-y-0
+			.content
+				@apply absolute rem:bottom-[30px] left-0 z-100 opacity-0 invisible p-4
+				@apply duration-300 transition-all text-white translate-y-15 flex flex-col gap-3
+				h3
+					@apply text-xl
+				.desc
+					@apply text-base line-clamp-2
+

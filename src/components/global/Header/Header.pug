@@ -1,46 +1,48 @@
-header.header(class="text-white py-4")
+.header-top.py-2.text-center
+	.container 
+		.logo
+			img(src="./img/logo.png", alt="")
+
+header.header
 	.container.mx-auto
 		.row(class="flex items-center justify-between")
-			.col(class="w-3/12")
-				.header-logo
-					a(href="/")
-						img(src="/img/logo-canh-cam.png", alt="Mercury Chemical", class="h-12")
-			.col(class="w-9/12 header-right")
+			.col(class="w-12/12 header-right")
+				.header-logo-mobile
+					.logo
+						img(src="./img/logo.png", alt="")
 				nav(class="flex items-center justify-end")
 					ul(class="header-menu")
 						li
 							a(href="/", class="") Trang chủ
 						li.current
-							a(href="/ve-chung-toi", class="") Về chúng tôi
+							a(href="/ve-chung-toi", class="") Khóa học sân khấu sự kiện
 						li.menu-item-has-children
-							a(href="/linh-vuc-hoat-dong", class="") Lĩnh vực hoạt động
-							ul.sub-menu 
-								li 
-									a(href="/linh-vuc-hoat-dong") Giới thiệu chung 
-								li 
-									a(href="/linh-vuc-hoat-dong") Sơ đồ tổ chức
+							a(href="/linh-vuc-hoat-dong", class="")  Khóa học vận hành Led, thiết kế Visual
 						li
-							a(href="/san-pham", class="") Sản phẩm
-						li
-							a(href="/phat-trien-ben-vung", class="") Phát triển bền vững
-						li
-							a(href="/tin-tuc", class="") Tin tức
-						li
-							a(href="/lien-he", class="") Liên hệ
-					.header-language
-						.wpml-ls
-							a(href="/", class="") VN
-						ul.wpml-ls-sub-menu
-							li
-								a(href="/", class="") VN
-					div(class="ml-4 header-search")
-						i(class="fa-light fa-magnifying-glass text-xl text-white pointer-events-none")
+							a(href="/san-pham", class="")  Khóa học vận hành ánh sáng
+						li.menu-item-has-children
+							a(href="/phat-trien-ben-vung", class="")  Tác phẩm học viên
+							.mega-menu
+								.container
+									ul.sub-menu
+										li
+											a(href="")  Depence R4 – M.a Timecode Lighting: Diễn hoạt, Timecode ánh sáng sân khấu, sự kiện
+											.mega-wrap
+												.walker-image
+													img(src="./img/1.png", alt="")
+										li
+											a(href="") Khóa học sân khấu sự kiện 2
+											.mega-wrap
+												.walker-image
+													img(src="./img/2.jpg", alt="")
+										li
+											a(href="") Khóa học sân khấu sự kiện 3
+											.mega-wrap
+												.walker-image
+													img(src="./img/banner.jpg", alt="")
+										li
+											a(href="") Khóa học sân khấu sự kiện 4
+											.mega-wrap
+												.walker-image
+													img(src="./img/bn.jpg", alt="")
 					include HeaderHambuger.pug
-.header-search-form
-	.close.flex.items-center.justify-center.absolute.top-0.right-0.bg-white.text-3xl.cursor-pointer(class="w-12.5 h-12.5")
-		i.fa-light.fa-xmark
-	.container
-		.wrap-form-search-product
-			.productsearchbox
-				input(type="text" placeholder="Search here...")
-				button

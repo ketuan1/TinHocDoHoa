@@ -2,7 +2,7 @@
 	@apply flex flex-col gap-2 ml-8 md:ml-11 lg:ml-11 xl:ml-[calc(58/19.2*1rem)] cursor-pointer z-10 relative xl:hidden
 	span
 		@apply transition-all duration-300 pointer-events-none
-		@apply w-7 h-1 bg-white relative z-10
+		@apply w-7 h-1 bg-primary-1 relative z-10
 		&:nth-child(1)
 			transform-origin: center left
 		&:nth-child(2)
@@ -11,11 +11,11 @@
 			transform-origin: center left
 	#pulseMe
 		transform-origin: center center
-		@apply bg-primary-1
+		//@apply bg-primary-1
 		@apply pointer-events-none
 		@apply left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[38px] h-[38px] absolute
 		.bar
-			box-shadow: 0 0 0 #ffffff,0 0 1px #ffffff,0 0 1px #ffffff,0 0 4px #ffffff
+			box-shadow: 0 0 0 #F73936,0 0 1px #F73936,0 0 1px #F73936,0 0 4px #F73936
 			@apply absolute bg-white
 			&.left
 				animation: leftBar 2s linear infinite

@@ -1,0 +1,25 @@
+section.section-video-1.relative.section-large
+	.container 
+		.grid(class="lg:grid-cols-2 gap-10 pb-10")
+			-for(i=0; i<2;i++)
+				.video-item.relative 
+					.image(class="ratio:pt-[382_680] img-ratio rounded-xl") 
+						img(src="./img/video.jpg", alt="")
+					.wrap-btn-play-secondary
+						a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox class="btn-play")
+							.icon
+					.title(class="text-24 font-bold text-white mt-3") Vay thương mại
+		.grid(class="lg:grid-cols-3 gap-10")
+			-for(i=0; i<6;i++)
+				.video-item.relative 
+					.image(class="ratio:pt-[382_680] img-ratio rounded-xl") 
+						img(src="./img/1.png", alt="")
+					.wrap-btn-play-secondary
+						a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox class="btn-play")
+							.icon
+					.title(class="text-24 font-bold text-white mt-3") Vay thương mại
+		.list-pagination
+			ul
+				-for(i=0;i<3;i++)
+					li
+						span 1

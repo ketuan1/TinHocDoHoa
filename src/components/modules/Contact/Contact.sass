@@ -1,0 +1,44 @@
+.section-contact
+	.col
+		@apply h-auto
+	.col-left
+		@apply flex flex-col gap-5
+		.list-contact
+			ul
+				@apply flex flex-col gap-2
+				li
+					a
+						&:hover
+							@apply text-primary-1
+						i
+							@apply pr-2
+		.list-social
+			ul
+				@apply flex items-center justify-start gap-3
+				li
+					a
+						@apply border border-solid border-white rem:w-[40px] rem:h-[40px] flex-center rounded-full
+						&:hover
+							@apply border-primary-1
+						img
+							@apply rem:w-[25px] rem:h-[25px]
+		.map-wrapper
+			@apply overflow-hidden rounded-lg
+			iframe
+				@apply rem:min-h-[400px] rem:h-[400px]
+	.col-right
+		@apply text-black p-5 lg:p-12 rounded-lg mt-10 lg:mt-0 h-full bg-primary-4
+		.form-contact-wrapper
+			.caption
+				@apply text-lg font-normal text-center mb-8
+			.form-group
+				@apply flex flex-col gap-3
+				.item
+					input,
+					textarea
+						@apply w-full outline-none border-none py-3 px-5 text-black rounded-1
+						@apply border border-solid border-neutral-500 bg-transparent
+						&::placeholder
+							@apply text-neutral-500
+				.wrap-btn-contact
+					@apply flex lg:items-center justify-between items-start flex-col-reverse gap-5 lg:flex-row

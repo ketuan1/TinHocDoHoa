@@ -1,0 +1,46 @@
+section.section-home-7.section-large
+	.container-fluid(class="px-4 xl:px-20")
+		.grid(class="sm:grid-cols-2 gap-4 lg:gap-6")
+			.box-item
+				.item
+					.image(class="img-ratio ratio:pt-[1/1]") 
+						img(src="./img/banner.jpg", alt="")
+					.content 
+						span Digital - Design
+						h3
+							a(href="") UI/UX Design & Website Development
+						.desc Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.
+						a(href="" class="btn btn-primary w-fit") 
+							.text Xem Thêm
+							.icon
+			.box-item
+				.grid(class="grid-cols-2 gap-4 lg:gap-6")
+					-for(i=0;i<4;i++)
+						.item 
+							.image(class="img-ratio ratio:pt-[1/1]") 
+								img(src="./img/banner.jpg", alt="")
+							.content 
+								span Digital - Design
+								h3 
+									a(href="") UI/UX Design & Website Development
+								.desc Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.
+								a(href="" class="btn btn-primary w-fit") 
+									.text Xem Thêm
+									.icon
+
+section.section-banner-video
+	.banner-page-home.relative
+		.swiper
+			.swiper-wrapper
+				-for(i=0;i<2;i++)
+					.swiper-slide
+						.item.relative
+							.image(class="img-ratio ratio:pt-[850_1920] img-zoom")
+								img(src="./img/1.png", alt="")
+							.wrap-btn-play
+								a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox class="btn-play")
+									.icon
+
+section.section-detail-content
+	.container 
+		

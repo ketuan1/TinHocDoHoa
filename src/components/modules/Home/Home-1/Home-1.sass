@@ -1,1 +1,20 @@
 
+.section-home-1
+	.wrap-content
+		.info
+			img
+				@apply rem:w-[115px] object-cover hidden sm:block
+		.list-box
+			.item
+				@apply border border-solid border-[rgba(255,255,255)] rem:py-[50px] rem:px-[30px]
+				@apply rounded-lg text-white h-full duration-300 transition-all
+				&:hover
+					@apply bg-primary-1 border-transparent
+					.icon
+						&::before
+							@apply -rotate-45 duration-300 transition-all
+				.icon
+					@apply rem:w-[35px] rem:h-[35px] relative overflow-hidden flex-shrink-0
+					&::before
+						content: '\f061'
+						@apply font-awesome absolute text-3xl font-normal inline-block duration-300 transition-all

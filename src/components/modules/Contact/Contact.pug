@@ -1,0 +1,48 @@
+include ../../../components/global/Breadcrumb/Breadcrumb.pug
+
+section.section-contact.section-large
+	.container 
+		.row 
+			.col(class="lg:w-5/12")
+				.col-left(class="text-white")
+					h2(class="text-4xl lg:text-6xl mb-2") Liên hệ với chúng tôi
+					span(class="text-24 font-bold") Học tại lớp cầm tay chỉ việc - Học Online Gv kèm học 24/7
+					.list-contact.mt-2
+						ul
+							-for(i=0;i<3;i++)
+								li
+									a(href="")
+										i(class="fa-light fa-location-dot") 
+										| 20/6 Đồng Xoài, Phường 13, Quận Tân Bình, Tp. HCM
+					.list-social
+						ul
+							-for(i=0;i<3;i++)
+								li 
+									a(href="")
+										img(src="./img/ico-1.png", alt="")
+					.map-wrapper
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.14144472024!2d106.64403197581755!3d10.800476989349793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee4f31d2b87%3A0x948c0d04bdfac35d!2zxJDhu5MgSOG7jWEgVGh14bqtbiBZ4bq_bg!5e0!3m2!1svi!2s!4v1746338104020!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			.col(class="lg:w-7/12")
+				.col-right
+					.form-contact-wrapper
+						.caption Mọi sự hợp tác tốt đẹp đều bắt đầu từ một cuộc trò chuyện. Hãy liên hệ với chúng tôi, mọi mong muốn của bạn sẽ được lắng nghe.
+						.contact-main
+							.form-group
+								.item 
+									input(type="text" placeholder="Họ và tên")
+								.item 
+									input(type="text" placeholder="Số điện thoại")
+								.item 
+									input(type="text" placeholder="Email")
+								.item 
+									input(type="text" placeholder="Khóa học đăng ký")
+								.item 
+									input(type="text" placeholder="Hình thức học")
+								.item 
+									textarea(type="text" placeholder="Tin nhắn" rows="7" cols="50")
+								.wrap-btn-contact
+									button(type="submit" class="btn btn-primary w-fit")
+										.text Gửi
+										.icon
+									.recapcha 
+										div recapcha

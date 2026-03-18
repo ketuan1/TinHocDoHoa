@@ -1,0 +1,28 @@
+.section-home-6
+	.wrap-list-item
+		.item
+			@apply grid gap-5 lg:grid-cols-[110px_1fr]
+			&:hover
+				.shape
+					@apply visible opacity-100 rem:top-[-25px] rem:left-[-25px]
+			.shape
+				@apply w-auto h-auto -z-1 absolute top-0 left-0 invisible opacity-0 transition-all duration-300
+			.image
+				@apply rem:h-[80px] rem:w-[80px] flex-center gap-2 bg-white rounded-full
+
+.section-home-6-detail
+	.wrap-list-item
+		.item
+			@apply grid gap-5 lg:grid-cols-[110px_1fr]
+			&:last-child
+				@apply mb-0
+			&:hover
+				.shape
+					@apply visible opacity-100 rem:top-[-25px] rem:left-[-25px]
+			.shape
+				@apply w-auto h-auto -z-1 absolute top-0 left-0 invisible opacity-0 transition-all duration-300
+			.image
+				@apply rem:h-[80px] rem:w-[80px] flex-center gap-2 bg-white rounded-full
+				img
+					filter: brightness(0) saturate(100%) invert(25%) sepia(97%) saturate(2948%) hue-rotate(346deg) brightness(102%) contrast(103%)
+					@apply rem:w-[45px] rem:h-[45px]

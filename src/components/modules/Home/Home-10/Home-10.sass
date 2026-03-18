@@ -1,0 +1,134 @@
+.section-home-10
+	.circle
+		@apply relative xl:flex-center rounded-full bg-primary-3 rem:w-[250px] rem:h-[250px]
+		.logo
+			@apply absolute bg-cover bg-center rem:w-[140px] rem:h-[140px] rounded-full
+	.col-left
+		@apply rem:min-h-[610px]
+		.image-main
+			animation: textRotation 8s linear infinite
+			@apply xl:rem:w-[610px] flex-center
+			img
+				@apply rem:w-[300px] rem:h-[300px] lg:rem:w-[400px] lg:rem:h-[400px] object-cover flex-center
+				@apply mx-auto rounded-full overflow-hidden
+
+
+.section-cols-3
+	.swiper-slide
+		@apply h-auto
+		.item
+			@apply bg-primary-4 text-black p-6 rounded-[30px] h-full
+			&:hover
+				h3
+					@apply text-primary-1
+				.image
+					img
+						@apply scale-110 transition-all duration-500
+			.image
+				@apply rounded-[30px] overflow-hidden transition-all duration-500
+
+.section-counter
+	@apply relative
+	.box-item
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+		@apply rounded-xl flex flex-col items-start gap-3 p-6 bg-primary-4
+		img
+			@apply rem:w-[60px] rem:h-[60px] object-cover
+	.counter-highlight
+		@apply absolute right-0 xl:rem:right-[-90px] rem:bottom-[100px]
+		.image
+			img
+				animation: spin 8s linear infinite
+				@apply rem:w-[138px] rem:h-[127px] object-contain
+			.title
+				transform: rotate(-11.239deg)
+				@apply absolute rem:top-[35px] rem:left-[40px] z-1
+
+.section-feedback
+	.swiper-slide
+		@apply h-auto
+	.item
+		@apply border border-solid border-neutral-800 p-10 rounded-xl
+		@apply text-black h-full
+		&:hover
+			.image-fb-bottom
+				@apply block
+			.image-fb-top
+				@apply hidden
+		.image-fb-top
+			img
+				@apply rem:w-[62px] rem:h-[44px] object-contain
+		.image-fb-bottom
+			@apply hidden
+			img
+				@apply rem:w-[62px] rem:h-[44px] object-contain
+		.content
+			@apply py-5
+			.profile
+				@apply flex items-center gap-3 mt-5
+				.avatar
+					img
+						@apply rem:w-[60px] rem:h-[60px] rounded-full overflow-hidden
+						@apply object-cover
+				.name
+					@apply text-lg font-bold
+			a
+				@apply hover:text-primary-1
+
+
+.section-image-pause
+	@apply overflow-hidden
+	.wrapper-image-hover
+		@apply flex transition-all duration-500 gap-2 min-w-full overflow-hidden
+		.item
+			flex: 0 0 25%
+			max-width: 25%
+			@apply relative transition-all duration-500 flex-shrink-0 overflow-hidden
+			&:hover
+				flex: 0 0 50%
+				max-width: 50%
+			.image
+				img
+					@apply w-full rem:h-[450px]
+
+.section-logo
+	.swiper
+		.swiper-wrapper
+			transition-timing-function: linear !important
+			.swiper-slide
+				@apply w-auto #{!important}
+
+.section-single-faq
+	@apply pb-0
+	.wrap-faq
+		@apply mb-5
+		&:last-child
+			@apply lg:mb-0
+		&:hover,
+		&.active
+			.title-faq,
+			.icon
+				@apply text-primary-1
+		.content
+			@apply hidden
+
+.section-single-home-4
+	img
+		filter: brightness(0) saturate(100%) invert(25%) sepia(97%) saturate(2948%) hue-rotate(346deg) brightness(102%) contrast(103%)
+
+.section-single-overview
+	background: -webkit-linear-gradient(left, rgb(237, 237, 239) 0%, rgb(227, 229, 233) 33%, rgb(251, 222, 191) 67%, rgb(249, 188, 176) 100%)
+	.item
+		.content
+			box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2)
+			@apply border border-solid border-[#7A7A7A] rounded-xl p-4 bg-white
+
+@keyframes textRotation 
+	to 
+		transform: rotate(360deg)
+	
+@keyframes spin 
+	0% 
+		transform: rotate(0deg)
+	100% 
+		transform: rotate(-360deg)

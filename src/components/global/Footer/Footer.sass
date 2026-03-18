@@ -1,6 +1,60 @@
-
+footer
+	.footer-column-1
+		@apply flex flex-col gap-5 overflow-hidden
+		.logo-footer
+			img
+				@apply rem:h-[100px] object-contain flex text-center mx-auto
+		.list-contact
+			ul
+				@apply flex flex-col gap-4
+				li
+					a
+						@apply text-base font-normal
+						&:hover
+							@apply text-primary-1
+						i
+							@apply pr-2 text-xl
+	.footer-column-2,
+	.footer-column-3
+		@apply flex flex-col gap-5
+		h3
+			@apply text-24 font-bold
+		ul
+			@apply flex flex-col gap-3
+			li
+				a
+					@apply text-base font-normal
+					&:hover
+						@apply text-primary-1
+	.footer-column-4
+		@apply flex flex-col gap-5
+		.form-contact-footer
+			.form-group
+				@apply flex items-center gap-3 overflow-hidden
+				input
+					@apply w-full
+					@apply border-none p-3 rounded-md outline-none text-black rem:h-[45px]
+				button
+					@apply bg-primary-1 py-2 px-5 flex-center gap-2 rounded-md text-white rem:h-[45px]
+					@apply border border-solid border-transparent
+					&:hover
+						@apply text-primary-1
+						@apply border-primary-1 bg-transparent
+					i
+						@apply text-xl font-normal
+		.list-social
+			ul
+				@apply flex items-center justify-start gap-3
+				li
+					a
+						@apply border border-solid border-black rem:w-[40px] rem:h-[40px] flex-center rounded-lg
+						&:hover
+							@apply border-primary-1
+						img
+							filter: brightness(0%)
+							@apply rem:w-[25px] rem:h-[25px]
 .wrap-scroll-top
 	#fixed-tool
 		@apply fixed cursor-pointer grid z-[999] right-2.5 bottom-[100px]
 		.icon-action
-			@apply items-center bg-primary-1 flex w-[50px] h-[50px] justify-center duration-[0.15s] transition-all ease-in-out text-white mt-2.5 rounded-[50%]
+			@apply items-center bg-primary-1 flex w-[50px] h-[50px] justify-center duration-[0.15s] transition-all ease-in-out text-black mt-2.5 rounded-[50%]

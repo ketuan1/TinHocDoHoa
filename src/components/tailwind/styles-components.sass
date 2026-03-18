@@ -1,39 +1,19 @@
 @layer components
-	.item-project-related
-		.img
-			@apply relative
-			&::before
-				content: ''
-				background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%)
-				opacity: .7
-				@apply w-full h-full absolute pointer-events-none z-10
-	.edge
-		@apply hidden lg:block
-	.item-product-main
-		@apply bg-white rounded-5 border-2 border-white transition-all duration-300 p-5
-		@apply hover:border-2 hover:border-primary-1
-		// @apply min-h-[calc(358/1920*100rem)]
-		&:hover
-			a
-				@apply text-primary-1
-			.wrap-button
-				opacity: 1
-				@apply translate-y-0
-		a.text-2xl
-			@media (max-width: 1023.98px)
-				+line(1)
-		.wrap-button
-			opacity: 0
-			@apply transition-all duration-300 translate-y-4
-	.tab-style-1
-		@apply  gap-5 lg:gap-10 overflow-auto
-		li
-			&:first-child
-				margin-left: auto
-			&:last-child
-				margin-right: auto
-			&.active
-				a
-					@apply bg-primary-1 text-white
-			a
-				@apply flex flex-center px-7 md:px-5 h-[calc(46/1920*100rem)] bg-background-2 uppercase font-bold hover:bg-primary-1 hover:text-white transition-all duration-300 whitespace-nowrap text-base md:text-lg
+	.format-content
+		*
+			@apply text-base font-normal
+		p
+			@apply mb-3
+			:last-child
+				@apply mb-0
+		ul,ol
+			@apply pl-3
+			li
+				@apply list-disc mb-3
+				&:last-child
+					@apply mb-0
+		img,
+		video,
+		figure,
+		iframe
+			@apply w-full h-full object-cover #{!important}

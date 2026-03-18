@@ -1,0 +1,181 @@
+.section-kh-1
+	.row
+		@apply mb-5 lg:mb-10
+		&:nth-child(even)
+			@apply flex-row-reverse
+		&:last-child
+			@apply mb-0
+		.col-left
+			background: linear-gradient(0deg, #2a2d32 20%, #1d1d1d 100%)
+			@apply rounded-xl flex flex-col gap-5
+			h3
+				@apply hover:text-primary-1
+				@extend .title-20
+			.content
+				ul
+					li
+						@apply list-[disclosure-closed]
+				> *
+					@apply text-base font-normal
+			.list-social
+				ul
+					@apply flex items-center justify-start gap-3
+					li
+						a
+							@apply border border-solid border-white rem:w-[40px] rem:h-[40px] flex-center rounded-full
+							&:hover
+								@apply border-primary-1
+							img
+								@apply rem:w-[25px] rem:h-[25px]
+		.col-right
+			@apply relative mt-5 lg:mt-0
+			img
+				@apply rounded-lg overflow-hidden
+
+.section-kh-2
+	.wrap-content-solution
+		.item-left
+			ul
+				@apply flex flex-col gap-10
+				.nav-item
+					.nav-link
+						&:hover
+							.wrap-title
+								@apply duration-300 transition-all
+								@apply border-transparent bg-primary-1 text-primary-2
+						&.active
+							.wrap-title
+								@apply bg-primary-1 text-primary-2 
+						.wrap-title
+							@apply p-7 cursor-pointer text-white rounded-[100px] duration-300 transition-all
+							@apply border border-solid border-[rgba(255,255,255,0.14)]
+							.title
+								@apply text-xl font-bold
+							span
+								@apply text-base font-normal 
+		.item-right
+			.box-item
+				@apply bg-[rgba(255,255,255,0.08)] rounded-lg p-8 
+				&:hover
+					.image
+						img
+							@apply scale-110 
+					.content
+						h3
+							@apply text-primary-1
+				.image
+					img
+						@apply duration-500 transition-all rounded-lg overflow-hidden
+				.content
+					@apply flex flex-col gap-4 pt-5
+					h3
+						@apply text-3xl font-bold text-white
+					.caption
+						@apply text-lg font-normal text-white line-clamp-3 mb-1
+
+.section-tutorial
+	.item
+		@apply rounded-xl p-8 h-full text-black flex flex-col gap-3 bg-primary-4
+		.image
+			img
+				@apply rem:w-[115px] rem:h-[115px] object-contain
+		.list-content
+			ul
+				@apply flex flex-col gap-4
+				li
+					@apply text-lg border-solid border-b border-neutral-800 pb-2
+		.list-social
+			@apply flex flex-col items-start gap-5 mt-5
+			ul
+				@apply flex items-center justify-start gap-3
+				li
+					a
+						@apply border border-solid border-neutral-800 rem:w-[40px] rem:h-[40px] flex-center rounded-full
+						&:hover
+							@apply border-primary-1
+						img
+							filter: brightness(0)
+							@apply rem:w-[25px] rem:h-[25px]
+
+.section-video-student
+	.item
+		.wrap-video
+			iframe
+				@apply w-full rem:h-[400px]
+
+.home-section-gallery
+	.item
+		.wrap-btn-play
+			.icon
+				@apply rem:w-[65px] rem:h-[65px]
+				&::after
+					@apply rem:w-[80px] rem:h-[80px]
+
+.section-gallery-swiper
+	.thumb-slider
+		.swiper-slide-thumb-active
+			@apply border border-solid border-primary-1 rounded-lg
+	.image
+		@apply rounded-lg overflow-hidden
+
+.section-about
+	.item
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+		@apply rounded-xl bg-primary-4 text-black flex flex-col gap-4 p-6 lg:p-8
+		@apply h-full items-center
+		.icon
+			img
+				filter: brightness(0)
+				@apply rem:w-[50px] rem:h-[50px]
+		h5
+			@apply rem:text-[30px] font-bold text-primary-1
+
+.section-list-course
+	@apply pb-0
+	.row
+		@apply mb-7
+		&:nth-child(even)
+			@apply flex-row-reverse
+		.btn-secondary
+			.text
+				@apply text-black
+			.icon
+				&::before
+					@apply text-black
+		&:hover
+			h4
+				@apply text-primary-1
+			.btn-secondary
+				.text
+					@apply text-primary-1
+				.icon
+					&::before,
+					&::after
+						@apply text-primary-1
+
+.section-kh-detail
+	background: -webkit-linear-gradient(left, rgb(237, 237, 239) 0%, rgb(227, 229, 233) 33%, rgb(251, 222, 191) 67%, rgb(249, 188, 176) 100%)
+	.col-right
+		.item
+			@apply mb-5
+			&:last-child
+				@apply mb-0
+			&.active
+				.wrap-heading
+					.title,
+					.icon
+						@apply text-primary-1
+			.wrap-heading
+				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+				@apply bg-white px-5 py-3 cursor-pointer transition-all duration-300
+				&:last-child
+					@apply border-b-0
+				.icon
+					@apply text-xl font-medium
+				&:hover
+					.title,
+					.icon
+						@apply text-primary-1
+			.wrap-content
+				.content
+					@apply px-3 my-5

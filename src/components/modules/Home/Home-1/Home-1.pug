@@ -1,0 +1,22 @@
+include ../../HomeBanner/HomeBanner
+
+section.section-home-1.section-large.hidden
+	.container 
+		.row(class="gap-10 lg:gap-0")
+			.col(class="lg:w-5/12")
+				.image(class="img-ratio ratio:pt-[1/1] img-zoom rounded-xl") 
+					img(src="./img/2.jpg", alt="")
+			.col(class="lg:w-7/12 lg:pl-20")
+				.wrap-content
+					.info 
+						div(class="flex sm:gap-7 mb-5")
+							a
+								img(src="./img/arrow.png", alt="")
+							h2(class="title-48") Best creative & digital agency
+						.content(class="text-base font-normal text-white") Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably
+					div(class="list-box grid grid-cols-2 md:grid-cols-3 gap-7 mt-12 relative z-10 lg:rem:ml-[-150px]")
+						-for(i=0;i<3;i++)
+							.item(class=(i === 2 ? 'col-span-2 md:col-span-1' : '')) 
+								a(href="" class="flex flex-col gap-10")
+									.icon 
+									.text(class="text-lg font-semibold") Social Media

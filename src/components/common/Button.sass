@@ -1,20 +1,17 @@
-//btn hover icon
-.btn
-	@apply py-2 px-5 cursor-pointer select-none transition-all duration-300
-	&.btn-primary
-		@apply flex gap-3 bg-primary-1 border-transparent relative z-2 w-fit overflow-hidden
+.btn-sw
+	@apply cursor-pointer select-none transition-all duration-300
+	&.btn-secondary
+		@apply flex gap-3 relative z-2 w-fit overflow-hidden
 		&:hover
 			.text
-				@apply  bg-primary-1 text-white
+				@apply  text-black
 			.icon
 				&::before
 					@apply translate-x-[125%]
 				&::after
-					@apply translate-x-0 text-white
+					@apply translate-x-0 text-black
 		.text
-			@apply flex items-end justify-center text-white text-lg
-			@apply  uppercase font-normal gap-5
-			@apply transition-all duration-300
+			@apply text-primary-1 text-lg transition-all duration-300
 		&::before
 			content: ''
 			@apply absolute top-0 left-0 w-full h-full -z-1
@@ -27,4 +24,73 @@
 			&::before,&::after
 				content: '\f061'
 				font-size: rr(20px)
-				@apply font-awesome inline-block w-full h-full absolute-full transition-all duration-300 font-light text-white
+				@apply font-awesome inline-block w-full h-full absolute-full transition-all duration-300 font-light text-primary-1
+
+.btn
+	@apply flex-between gap-8 border border-solid border-primary-2 select-none transition-all duration-300
+	&.btn-primary
+		@apply flex rounded-[30px] p-1 pl-7
+		&:hover
+			.text
+				@apply text-primary-1
+			.icon
+				@apply bg-primary-2 border-transparent
+				&::before
+					@apply text-primary-1 -rotate-45 
+		.text
+			@apply text-lg font-semibold
+		.icon
+			@apply rem:w-[45px] rem:h-[45px] relative overflow-hidden flex-center gap-2
+			@apply rounded-full border border-solid border-primary-2 transition-all duration-500
+			&::before
+				content: "\f061"
+				@apply font-awesome inline-block text-lg font-normal text-primary-2
+
+
+.wrap-btn-play
+	@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+	.icon
+		@apply relative rem:w-[80px] rem:h-[80px] flex-center gap-2 bg-primary-1 rounded-full
+		&::before
+			content: '\f04b'
+			@apply absolute font-awesome text-24 font-black text-white
+		&::after
+			animation: pulse-border 1500ms ease-out infinite
+			content: ""
+			@apply absolute top-1/2 left-1/2 -z-1 rounded-full rem:w-[100px] rem:h-[100px] 
+			@apply -translate-x-1/2 -translate-y-1/2 bg-primary-1
+
+.wrap-btn-play-secondary
+	@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+	&:hover
+		.icon
+			&::before
+				@apply scale-150 transition-all duration-300
+	.icon
+		@apply relative rem:w-[80px] rem:h-[80px] flex-center gap-2 bg-[rgba(0,0,0,0.50)] rounded-full
+		&::before
+			content: '\f04b'
+			@apply absolute font-awesome text-24 font-black text-white transition-all duration-300
+
+
+.list-pagination
+	@apply text-center pt-15
+	ul
+		@apply flex-center gap-3
+		li
+			span,
+			a
+				@apply cursor-pointer text-neutral-500 border border-solid border-neutral-500 rem:w-[45px] rem:h-[45px] flex-center gap-3 rounded-lg
+				&.active
+					@apply border-primary-1 text-primary-1
+				&:hover
+					@apply bg-primary-1 border-primary-1 text-white
+
+@keyframes pulse-border
+	0% 
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+		opacity: 1
+
+	100% 
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
+		opacity: 0

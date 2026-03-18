@@ -1,0 +1,32 @@
+section.section-home-3.section-large.relative.hidden
+	.container 
+		.row
+			.col(class="lg:w-5/12 xl:p-0")
+				.wrap-slide-left 
+					.cols-home-thumb.relative 
+						.swiper 
+							.swiper-wrapper 
+								-for(i=0;i<4;i++)
+									.swiper-slide 
+										.item-img.relative
+											.image(class="ratio:pt-[640_600] img-ratio") 
+												img(src="./img/2.jpg", alt="")
+											.btn-play-icon
+												a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox class="flex-center gap-3")
+													.icon 
+													.text(class="text-lg font-normal text-white") Phát video
+			.col(class="lg:w-7/12")
+				.wrap-slide-right 
+					.cols-home-content.relative
+						.global-pagination-style-1 
+							.swiper-pagination
+						.swiper 
+							.swiper-wrapper 
+								-for(i=0;i<4;i++)
+									.swiper-slide 
+										.item-content
+											h3 Experience the perfect blend
+											.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						.global-slider-style-2
+							.btn-next 
+							.btn-prev

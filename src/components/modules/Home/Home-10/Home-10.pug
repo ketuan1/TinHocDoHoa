@@ -1,0 +1,210 @@
+section.section-home-10.section-large
+	.container
+		div(class="flex-between gap-4 text-white mb-7")
+			.wrap
+				.sub-title(class="tex-lg text-primary-1 font-bold") Đồ Họa Thuận Yến
+				h2(class="text-3xl lg:text-6xl") Our methodology
+			.circle(class="hidden")
+				.logo(class="" style="background-image: url('./img/favicon.jpg')")
+		.grid(class="lg:grid-cols-2 gap-10")
+			.col-left.relative(class="overflow-hidden")
+				.image-main(class="w-full h-full bg-no-repeat bg-contain lg:bg-cover bg-center" style="background-image: url('./img/cicrle.png')")
+					img(src="./img/2.jpg", alt="")
+			.col-right(class="text-white")
+				h2(class="title-3xl") Our methodology
+				.desc(class="text-base mb-3") We begin by getting to know you and your brand. Through in-depth conversations, research, and analysis.
+				.wrap-image-video.relative
+					.image(class="img-ratio ratio:pt-[426_680] rounded-xl") 
+						img(src="./img/img-1.jpg", alt="")
+					.wrap-btn-play
+						a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox) 
+							.icon
+
+section.section-cols-3(class="section-large")
+	.container 
+		.content(class="text-white flex items-center justify-between pb-10") 
+			h2(class="text-3xl lg:text-6xl font-bold") Our Best AI Solutions
+			a(href="" class="btn btn-primary")
+				.text Xem Thêm
+				.icon
+	div(class="border border-[rgba(255,255,255,0.1)] border-b")
+	.container 
+		.home-cols-3.pt-10
+			.wrap-layout-3.relative 
+				.swiper
+					.swiper-wrapper
+						-for(i=0;i<4;i++)
+							.swiper-slide
+								.item 
+									.image(class="img-ratio ratio:pt-[272_358]")
+										img(src="./img/img-1.jpg", alt="")
+									.content(class="flex flex-col gap-2 text-white pt-5") 
+										a(href="") 
+											h3(class="title-20") Stellar Tech Solutions
+										.desc(class="text-base line-clamp-2") We redesigned Stellar Tech’s website to enhance.
+				.global-slider-style-1 
+					.btn-next
+					.btn-prev
+
+section.section-counter.section-large
+	.container 
+		h2(class="text-3xl lg:text-6xl font-bold text-white") Con số nổi bật của đồ họa thuận yến
+		.desc(class="text-base text-white text-start pb-10") We begin by getting to know you and your brand. Through in-depth conversations, research, and analysis.
+		.grid(class="grid-cols-6 lg:grid-cols-12 gap-10 relative")
+			-for(i=0;i<4;i++)
+				div(class="col-span-3 lg:col-span-3 relative")
+					.box-item 
+						.number(class="rem:text-[40px] font-bold text-white flex items-center gap-3")
+							span(class="countup" data-number="200") 200
+							span(class="action") +
+						.caption(class="text-base font-bold text-primary-1 pb-3 font-secondary") Cửa hàng trên toàn quốc
+			.counter-highlight
+				.image.relative
+					img(class="" src="./img/counter.png", alt="")
+					.title(class="text-xl font-bold text-white") con số <br> nổi bật
+
+section.section-large
+	.container 
+		h2(class="text-3xl lg:text-6xl font-bold text-white mb-10") Video
+		.home-cols-2 
+			.relative 
+				.swiper
+					.swiper-wrapper
+						-for(i=0;i<3;i++)
+							.swiper-slide
+								.item-video(class="relative")
+									.image(class="img-ratio ratio:pt-[426_680] img-zoom rounded-lg overflow-hidden")
+										img(src="./img/1.png", alt="")
+									.wrap-btn-play
+										a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox) 
+											.icon 	
+				.global-slider-style-1 
+					.btn-next
+					.btn-prev
+
+section.section-project.section-large
+	.container 
+		h2(class="text-3xl lg:text-6xl font-bold text-white mb-10") Tác phẩm học viên
+		.home-cols-project
+			.relative
+				.swiper
+					.swiper-wrapper
+						-for(i=0;i<10;i++)
+							.swiper-slide
+								.item-thumb
+									a(href="./img/2.jpg" data-fancybox="gallery") 
+										.image(class="img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden")
+											img(src="./img/2.jpg", alt="")
+				.global-slider-style-1 
+					.btn-next
+					.btn-prev
+
+section.section-feedback.section-large
+	.container 
+		.content(class="text-white mb-10")
+			h2(class="text-3xl lg:text-6xl font-bold") Cảm nhận - Đánh giá
+			.desc(class="text-base") Mục đích của chúng tôi là phát triển mối quan hệ lâu dài với khách hàng và tiếp tục hỗ trợ họ trong mọi nỗ lực tài chính
+		.home-cols-3 
+			.relative
+				.swiper
+					.swiper-wrapper
+						-for(i=0;i<4;i++)
+							.swiper-slide
+								.item
+									.image-fb-top
+										img(src="./img/fb-1.png", alt="")
+									.image-fb-bottom
+										img(src="./img/fb-2.png", alt="")
+									.content 
+										.desc(class="line-clamp-7") "Là những nhà kinh doanh độc lập, chúng tôi đã phải vật lộn để nhận được sự hỗ trợ từ các ngân hàng và nhà môi giới, nhưng MCT đã vào cuộc. Họ hiểu được hoàn cảnh của chúng tôi, dẫn đến số tiền vay cao hơn và đảm bảo được ngôi nhà mơ ước của chúng tôi"
+										.profile 
+											.avatar
+												img(src="./img/ico-1.png", alt="")
+											.info
+												.title Amanda
+												.caption 28 tuổi - Nhân viên thiết kế
+				.global-slider-style-1 
+					.btn-next
+					.btn-prev
+
+section.section-image-pause.section-large
+	.container 
+		.content(class="text-white mb-10")
+			h2(class="text-3xl lg:text-6xl font-bold") Sản phẩm nổi bật của học viên
+			.desc(class="text-base") Mục đích của chúng tôi là phát triển mối quan hệ lâu dài với khách hàng và tiếp tục hỗ trợ họ trong mọi nỗ lực tài chính
+		.wrapper-image-hover
+			-for(i=0;i<4;i++)
+				.item 
+					.image(class="")
+						img(src="./img/img-1.jpg", alt="")
+					//-.caption 
+					//-	h4
+					//-		a(href="") Sản phẩm nổi bật của học viên
+					//-	span Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+section.section-home-about.section-large 
+	.container 
+		.grid(class="grid-cols-1 lg:grid-cols-2 gap-10 items-center")
+			.col-left
+				.wrap-image.relative 
+					.image(class="img-ratio ratio:pt-[1_1] rounded-xl overflow-hidden")
+						img(src="./img/1.png", alt="")
+					.wrap-btn-play
+						a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox) 
+							.icon 
+			.col-right
+				.content
+					h2(class="text-3xl lg:text-6xl font-bold mb-3") Đồ Họa Thuận Yến Đào tạo - Thiết kế
+					.desc(class="format-content") Cập nhật kiến thức ngành học sân khấu, sự kiện theo công nghệ tiên tiến của thế giới đó chính là cơ hội lớn nhất của các bạn và Đồ họa Thuận Yến luôn phát triển với sứ mệnh đó. Nếu bạn đã sẵn sàng khẳng định mình trong lĩnh vực Event, hãy bắt đầu hành trình với chúng tôi để nắm bắt những cơ hội đang chờ đón bạn trong tương lai!
+
+section.section-logo.section-large 
+	.home-cols-brand
+		.swiper
+			.swiper-wrapper 
+				-for(i=0;i<20;i++)
+					.swiper-slide
+						.item(class="")
+							.image(class="rem:w-[150px] rem:h-[55px] zoom-img")
+								img(src="./img/1.png", class="w-full h-full object-cover", alt="")
+
+
+section.section-single-detail-about.section-large 
+	.container 
+		h2(class="title-48 text-center mb-10 text-black") Đồ Họa Thuận Yến Đào tạo - Thiết kế
+		.grid(class="grid-cols-1 lg:grid-cols-2 gap-10 items-center")
+			.col-left
+				.wrap-image.relative 
+					.image(class="img-ratio ratio:pt-[369_656] rounded-xl overflow-hidden")
+						img(src="./img/1.png", alt="")
+					.wrap-btn-play
+						a(href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox) 
+							.icon 
+			.col-right
+				.content
+					.desc(class="format-content") Cập nhật kiến thức ngành học sân khấu, sự kiện theo công nghệ tiên tiến của thế giới đó chính là cơ hội lớn nhất của các bạn và Đồ họa Thuận Yến luôn phát triển với sứ mệnh đó. Nếu bạn đã sẵn sàng khẳng định mình trong lĩnh vực Event, hãy bắt đầu hành trình với chúng tôi để nắm bắt những cơ hội đang chờ đón bạn trong tương lai!
+
+section.section-single-faq.section-large
+	.container
+		h2(class="title-48 text-center mb-10 text-black") Câu hỏi thường gặp
+		.row
+			-for(j=0;j<2;j++)
+				.col(class="md:w-6/12")
+					-for(i=0;i<4;i++)
+						.wrap-faq(class="bg-primary-4 p-5 rounded-xl")
+							.flex-between.wrap-heading(class="cursor-pointer gap-4")
+								h6(class="title-20 title-faq")  Khi nào có thể bắt đầu khóa học ?
+								.icon
+									i(class="fa-solid fa-plus text-lg font-light")
+							.content(class="text-base desc mt-3") Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.
+
+section.section-single-overview.section-large
+	.container
+		h2(class="title-48 text-center mb-10 text-black") Giới thiệu khóa học
+		-for(j=0;j<3;j++)
+			.grid(class="lg:grid-cols-2 gap-10 items-center mb-10 last:mb-0")
+				-for(i=0;i<2;i++)
+					.item
+						h3(class="title-24 text-primary-1 text-center") MODULE 1 (Phần 1, 2)
+						.content
+							h6(class="title-20 text-black text-center")  KẾT QUẢ ĐẠT ĐƯỢC
+							.desc(class="format-content")  Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.

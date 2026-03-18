@@ -1,0 +1,24 @@
+.section-home-3
+	@apply pb-20
+	.wrap-slide-left
+		.item-img
+			img
+				@apply rounded-xl
+		.btn-play-icon
+			@apply absolute bottom-0 right-0 bg-primary-1 rounded-[60px] p-2 pr-6 m-8
+			.icon
+				@apply relative rounded-full rem:w-[32px] rem:h-[32px] flex-center bg-white
+				&::before
+					content: '\f04b'
+					@apply font-awesome text-xl font-black text-primary-1
+	.wrap-slide-right
+		@apply flex flex-col justify-center h-full lg:rem:pl-[80px]
+		.item-content
+			@apply mt-5 xl:mt-0
+			h3
+				@apply text-primary-1 font-bold mb-3 rem:text-[35px] lg:text-6xl
+				
+			.desc
+				@apply text-base text-white
+	.global-slider-style-2
+		@apply z-100

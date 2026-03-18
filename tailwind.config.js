@@ -58,11 +58,11 @@ module.exports = {
 				sm: "100vw",
 				md: "768px",
 				lg: "1024px",
-				xl: "calc(1460/1920*100rem)",
+				xl: "calc(1464/1920*100rem)",
 			},
 		},
 		fontFamily: {
-			primary: ["Archivo", "sans-serif"],
+			primary: ["Inter", "sans-serif"],
 			awesome: ['"Font Awesome 6 Pro"'],
 		},
 		fontSize: {
@@ -77,11 +77,12 @@ module.exports = {
 			"3xl": ["calc(30/1920*100rem)", { lineHeight: "calc(40/1920*100rem)" }],
 			"4xl": ["calc(36/1920*100rem)", { lineHeight: "calc(48/1920*100rem)" }],
 			"5xl": ["calc(40/1920*100rem)", { lineHeight: "calc(48/1920*100rem)" }],
-			"6xl": ["calc(48/1920*100rem)", { lineHeight: "calc(64/1920*100rem)" }],
+			"6xl": ["calc(38/1920*100rem)", { lineHeight: "calc(46/1920*100rem)" }],
 			"7xl": ["calc(72/1920*100rem)", { lineHeight: "1" }],
 			"8xl": ["calc(84/1920*100rem)", { lineHeight: "1" }],
 			"9xl": ["calc(96/1920*100rem)", { lineHeight: "1" }],
 			28: ["calc(28/1920*100rem)", { lineHeight: 1.5 }],
+			24: ["calc(24/1920*100rem)", { lineHeight: 1.2 }],
 			30: ["calc(30/1920*100rem)", { lineHeight: "calc(38/1920*100rem)" }],
 			38: ["calc(38/1920*100rem)", { lineHeight: "calc(46/1920*100rem)" }],
 			32: ["calc(32/1920*100rem)"],
@@ -209,9 +210,10 @@ module.exports = {
 			colors: {
 				transparent: "transparent",
 				primary: {
-					1: "#00b7f1",
-					2: "#000000",
-					3: "#e3c152",
+					1: "#F73936",
+					2: "#0e0f11",
+					3: "#18191b",
+					4: "#f8f8f8",
 					BG: "#fffcdf",
 				},
 				secondary: {

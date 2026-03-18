@@ -1,18 +1,27 @@
-.global-breadcrumb
-	@apply bg-[#f1f1f1] border-b border-white
-	p
-		@apply h-[calc(48/1920*100rem)] flex items-center overflow-auto
-		a
-			&:first-child
-				@apply text-0
+
+.global-banner
+	@apply relative
+	.wrapper-banner
+		@apply relative
+		&::before
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%)
+			content: ""
+			@apply absolute-full z-1
+	.global-breadcrumb
+		@apply absolute bottom-0 left-0 z-10 w-full text-white pb-5
+		p
+			@apply h-[calc(48/1920*100rem)] flex items-center overflow-auto
+			a
+				&:first-child
+					@apply text-0
+					&::before
+						content: '\f015'
+						@apply font-awesome text-sm
+			a,span
+				@apply text-base text-white whitespace-nowrap
+			span.separator
+				@apply text-0 inline-flex
 				&::before
-					content: '\f015'
-					@apply font-awesome text-sm
-		a,span
-			@apply text-sm text-[#333333] whitespace-nowrap
-		span.separator
-			@apply text-0 inline-flex
-			&::before
-				content: "\f054"
-				@apply font-awesome font-normal text-sm mx-2
+					content: "\f054"
+					@apply font-awesome font-normal text-base mx-2
 

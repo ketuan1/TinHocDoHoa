@@ -1,8 +1,8 @@
 @layer base
 	html, body
-		font-size: 15px
+		font-size: 16px
 		@screen md
-			font-size: 15px
+			font-size: 16px
 		@screen xl
 			font-size: 1vw
 	.table-responsive
@@ -13,6 +13,11 @@
 	.img-full
 		img
 			@apply w-full h-full object-cover
+	.img-zoom
+		@apply duration-500 transition-all overflow-hidden
+		&:hover
+			img
+				@apply scale-110 duration-500 transition-all
 	.img-ratio
 		position: relative
 		display: block
@@ -38,7 +43,9 @@
 		&>div
 			@apply absolute top-0 left-0 w-full h-full transition-all duration-300
 	body
-		@apply text-[#333333] text-base font-primary
+		@apply text-black bg-white text-base font-primary
+	main
+		@apply overflow-hidden
 	.row
 		@apply flex flex-wrap -mx-3.75
 	.col
@@ -84,9 +91,7 @@
 			content: ''
 			@apply absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 pointer-events-none z-10 whitespace-nowrap
 	.homepage
-		@apply bg-white
-		main
-			// @apply overflow-x-hidden
+		@apply bg-white text-black
 	.wpml-ls
 		@apply w-auto max-w-none #{!important}
 		a

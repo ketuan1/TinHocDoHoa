@@ -1,15 +1,74 @@
 .global-slider-style-1
-	@apply flex-center mt-5 xl:mt-0
+	@apply flex-center flex-row-reverse gap-5 xl:flex-row mt-10 xl:mt-0 
 	.btn-next,
 	.btn-prev
-		@apply text-white bg-primary-1 lg:text-primary-1 font-normal cursor-pointer lg:bg-transparent
-		@apply flex-center gap-3 text-32 font-light z-10
-		@apply rem:w-[60px] rem:h-[60px] rounded-full
+		@apply flex-center z-10 cursor-pointer border border-solid border-transparent
+		@apply p-5 text-lg bg-[#D2D2D7] w-12 h-12 text-primary-3 font-semibold rounded-md
+		&:hover
+			@apply text-primary-1 border-primary-1 bg-transparent
 	.btn-next
-		@apply static ml-3 xl:absolute left-full top-1/2  xl:translate-x-2/4
+		@apply static lg:absolute left-full right-auto top-1/2 -translate-y-2/4 lg:ml-10
 		&::before
 			@apply content-['\f054'] font-awesome
 	.btn-prev
-		@apply static mr-3 xl:absolute right-full top-1/2  xl:-translate-x-2/4
+		@apply static lg:absolute right-full left-auto top-1/2 -translate-y-2/4 lg:mr-10
+		&::before
+			@apply content-['\f053'] font-awesome 
+	.swiper-button-disabled
+		@apply opacity-50
+
+.global-slider-style-2
+	@apply flex-center gap-4 mt-5 xl:mt-0
+	@apply absolute lg:rem:bottom-[-150px]
+	.btn-next,
+	.btn-prev
+		@apply border border-solid border-neutral-300 text-white cursor-pointer
+		@apply flex-center gap-3 text-xl font-normal
+		@apply rem:w-[48px] rem:h-[48px] rounded-full
+		&:hover
+			@apply bg-white border-none text-primary-1
+	.btn-next
+		&::before
+			@apply content-['\f060'] font-awesome
+	.btn-prev
+		&::before
+			@apply content-['\f061'] font-awesome
+
+.global-slider-style-3
+	@apply flex flex-row-reverse static
+	@screen lg
+		@apply absolute left-1/2 -translate-x-1/2 lg:left-full lg:right-auto lg:top-1/2 z-2 rem:ml-[-30px]
+	.btn-next,
+	.btn-prev
+		@apply p-5 text-lg bg-[#D2D2D7] w-12 h-12 flex-center text-white left-auto right-0 cursor-pointer
+		@apply border border-solid border-transparent
+		&:hover
+			@apply text-primary-1 border-primary-1 bg-transparent
+	.btn-next
+		@apply static lg:absolute top-1/2  xl:translate-x-2/4
+		&::before
+			@apply content-['\f054'] font-awesome
+	.btn-prev
+		@apply static lg:absolute top-1/2  xl:-translate-x-2/4 mr-5
 		&::before
 			@apply content-['\f053'] font-awesome
+
+.global-pagination-style-1
+	@apply hidden lg:block
+	.swiper-pagination
+		@apply static #{!important}
+		@apply flex gap-2
+		@apply  rem:mb-[40px] overflow-hidden
+		&-total
+			@apply text-lg font-bold text-neutral-300
+		&-current
+			@apply text-primary-1 text-5xl font-bold
+
+.global-pagination-style-2
+	.swiper-pagination
+		@apply flex-center gap-1 rem:bottom-[50px]
+		@apply  overflow-hidden
+		&-bullet
+			@apply rem:w-[12px] rem:h-[12px] bg-white opacity-100
+			&-active
+				@apply bg-primary-1 rem:w-[30px] rem:h-[10px] rounded-lg

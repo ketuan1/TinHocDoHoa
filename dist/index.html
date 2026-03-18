@@ -7,41 +7,59 @@
 		<link rel="stylesheet" href="">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/core.min.css">
 		<link rel="stylesheet" href="./css/main.min.css">
 		<title>Home</title>
 	</head>
 	<body class="homepage">
-		<header class="header text-white py-4">
+		<div class="header-top py-2 text-center">
+			<div class="container"> 
+				<div class="logo"><img src="./img/logo.png" alt=""></div>
+			</div>
+		</div>
+		<header class="header">
 			<div class="container mx-auto">
 				<div class="row flex items-center justify-between">
-					<div class="col w-3/12">
-						<div class="header-logo"><a href="/"><img class="h-12" src="/img/logo-canh-cam.png" alt="Mercury Chemical"></a></div>
-					</div>
-					<div class="col w-9/12 header-right">
+					<div class="col w-12/12 header-right">
+						<div class="header-logo-mobile">
+							<div class="logo"><img src="./img/logo.png" alt=""></div>
+						</div>
 						<nav class="flex items-center justify-end">
 							<ul class="header-menu">
 								<li><a href="/">Trang chủ</a></li>
-								<li class="current"><a href="/ve-chung-toi">Về chúng tôi</a></li>
-								<li class="menu-item-has-children"><a href="/linh-vuc-hoat-dong">Lĩnh vực hoạt động</a>
-									<ul class="sub-menu"> 
-										<li> <a href="/linh-vuc-hoat-dong">Giới thiệu chung </a></li>
-										<li> <a href="/linh-vuc-hoat-dong">Sơ đồ tổ chức</a></li>
-									</ul>
+								<li class="current"><a href="/ve-chung-toi">Khóa học sân khấu sự kiện</a></li>
+								<li class="menu-item-has-children"><a href="/linh-vuc-hoat-dong"> Khóa học vận hành Led, thiết kế Visual</a></li>
+								<li><a href="/san-pham"> Khóa học vận hành ánh sáng</a></li>
+								<li class="menu-item-has-children"><a href="/phat-trien-ben-vung"> Tác phẩm học viên</a>
+									<div class="mega-menu">
+										<div class="container">
+											<ul class="sub-menu">
+												<li><a href=""> Depence R4 – M.a Timecode Lighting: Diễn hoạt, Timecode ánh sáng sân khấu, sự kiện</a>
+													<div class="mega-wrap">
+														<div class="walker-image"><img src="./img/1.png" alt=""></div>
+													</div>
+												</li>
+												<li><a href="">Khóa học sân khấu sự kiện 2</a>
+													<div class="mega-wrap">
+														<div class="walker-image"><img src="./img/2.jpg" alt=""></div>
+													</div>
+												</li>
+												<li><a href="">Khóa học sân khấu sự kiện 3</a>
+													<div class="mega-wrap">
+														<div class="walker-image"><img src="./img/banner.jpg" alt=""></div>
+													</div>
+												</li>
+												<li><a href="">Khóa học sân khấu sự kiện 4</a>
+													<div class="mega-wrap">
+														<div class="walker-image"><img src="./img/bn.jpg" alt=""></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</li>
-								<li><a href="/san-pham">Sản phẩm</a></li>
-								<li><a href="/phat-trien-ben-vung">Phát triển bền vững</a></li>
-								<li><a href="/tin-tuc">Tin tức</a></li>
-								<li><a href="/lien-he">Liên hệ</a></li>
 							</ul>
-							<div class="header-language">
-								<div class="wpml-ls"><a href="/">VN</a></div>
-								<ul class="wpml-ls-sub-menu">
-									<li><a href="/">VN</a></li>
-								</ul>
-							</div>
-							<div class="ml-4 header-search"><i class="fa-light fa-magnifying-glass text-xl text-white pointer-events-none"></i></div>
 							<div class="header-hambuger"><span></span><span></span><span></span>
 								<div id="pulseMe">
 									<div class="bar left"></div>
@@ -55,19 +73,1253 @@
 				</div>
 			</div>
 		</header>
-		<div class="header-search-form">
-			<div class="close flex items-center justify-center absolute top-0 right-0 bg-white text-3xl cursor-pointer w-12.5 h-12.5"><i class="fa-light fa-xmark"></i></div>
-			<div class="container">
-				<div class="wrap-form-search-product">
-					<div class="productsearchbox">
-						<input type="text" placeholder="Search here...">
-						<button></button>
+		<main class="ov-h">
+			<section class="section-banner">
+				<div class="banner-page-home"> 
+					<div class="relative">
+						<div class="swiper">
+							<div class="swiper-wrapper"> 
+								<div class="swiper-slide"> 
+									<div class="item-banner">
+										<div class="image img-ratio pt-[calc(350/1920*100rem)] lg:pt-[calc(840/1920*100rem)]  relative overflow-hidden"> <img src="./img/1.png" alt=""></div>
+										<div class="container">
+											<div class="caption">
+												<div class="text">Học nghề HOT cùng </br> Đồ họa Thuận Yến</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item-banner">
+										<div class="wrap-video img-ratio pt-[calc(350/1920*100rem)] lg:pt-[calc(840/1920*100rem)]">
+											<video width="100%" autoplay muted loop style="object-fit: cover; height=720px; ">
+												<source src="https://media.istockphoto.com/id/2176705894/vi/video/video-m%C3%A1y-bay-kh%C3%B4ng-ng%C6%B0%E1%BB%9Di-l%C3%A1i-bay-qua-l%C3%A0ng-glynde-%E1%BB%9F-east-sussex-anh.mp4?s=mp4-640x640-is&amp;k=20&amp;c=_lu4VMmhfl7odkQNhCK45hpz282V8d5v3hlWGgqcQ8E=" type="video/mp4">
+											</video>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="global-pagination-style-2">
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-1 section-large hidden">
+				<div class="container"> 
+					<div class="row gap-10 lg:gap-0">
+						<div class="col lg:w-5/12">
+							<div class="image img-ratio ratio:pt-[1/1] img-zoom rounded-xl"> <img src="./img/2.jpg" alt=""></div>
+						</div>
+						<div class="col lg:w-7/12 lg:pl-20">
+							<div class="wrap-content">
+								<div class="info"> 
+									<div class="flex sm:gap-7 mb-5"><a><img src="./img/arrow.png" alt=""></a>
+										<h2 class="title-48">Best creative & digital agency</h2>
+									</div>
+									<div class="content text-base font-normal text-white">Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably</div>
+								</div>
+								<div class="list-box grid grid-cols-2 md:grid-cols-3 gap-7 mt-12 relative z-10 lg:rem:ml-[-150px]">
+									<div class="item"> <a class="flex flex-col gap-10" href="">
+											<div class="icon"> </div>
+											<div class="text text-lg font-semibold">Social Media</div></a></div>
+									<div class="item"> <a class="flex flex-col gap-10" href="">
+											<div class="icon"> </div>
+											<div class="text text-lg font-semibold">Social Media</div></a></div>
+									<div class="item col-span-2 md:col-span-1"> <a class="flex flex-col gap-10" href="">
+											<div class="icon"> </div>
+											<div class="text text-lg font-semibold">Social Media</div></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-2 section-large">
+				<div class="container"> 
+					<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+						<div class="item flex flex-col gap-5"> 
+							<div class="image">	<img src="./img/ico-1.png" alt=""></div>
+							<h4 class="text-xl font-semibold">Marketing & SEO Optimization</h4>
+							<div class="caption text-base font-normal">Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.</div><a class="btn btn-primary" href="">
+								<div class="text">Xem Thêm</div>
+								<div class="icon"></div></a>
+						</div>
+						<div class="item flex flex-col gap-5"> 
+							<div class="image">	<img src="./img/ico-1.png" alt=""></div>
+							<h4 class="text-xl font-semibold">Marketing & SEO Optimization</h4>
+							<div class="caption text-base font-normal">Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.</div><a class="btn btn-primary" href="">
+								<div class="text">Xem Thêm</div>
+								<div class="icon"></div></a>
+						</div>
+						<div class="item flex flex-col gap-5"> 
+							<div class="image">	<img src="./img/ico-1.png" alt=""></div>
+							<h4 class="text-xl font-semibold">Marketing & SEO Optimization</h4>
+							<div class="caption text-base font-normal">Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.</div><a class="btn btn-primary" href="">
+								<div class="text">Xem Thêm</div>
+								<div class="icon"></div></a>
+						</div>
+						<div class="item flex flex-col gap-5"> 
+							<div class="image">	<img src="./img/ico-1.png" alt=""></div>
+							<h4 class="text-xl font-semibold">Marketing & SEO Optimization</h4>
+							<div class="caption text-base font-normal">Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.</div><a class="btn btn-primary" href="">
+								<div class="text">Xem Thêm</div>
+								<div class="icon"></div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-3 section-large relative hidden">
+				<div class="container"> 
+					<div class="row">
+						<div class="col lg:w-5/12 xl:p-0">
+							<div class="wrap-slide-left"> 
+								<div class="cols-home-thumb relative"> 
+									<div class="swiper"> 
+										<div class="swiper-wrapper"> 
+											<div class="swiper-slide"> 
+												<div class="item-img relative">
+													<div class="image ratio:pt-[640_600] img-ratio"> <img src="./img/2.jpg" alt=""></div>
+													<div class="btn-play-icon"><a class="flex-center gap-3" href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox>
+															<div class="icon"> </div>
+															<div class="text text-lg font-normal text-white">Phát video</div></a></div>
+												</div>
+											</div>
+											<div class="swiper-slide"> 
+												<div class="item-img relative">
+													<div class="image ratio:pt-[640_600] img-ratio"> <img src="./img/2.jpg" alt=""></div>
+													<div class="btn-play-icon"><a class="flex-center gap-3" href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox>
+															<div class="icon"> </div>
+															<div class="text text-lg font-normal text-white">Phát video</div></a></div>
+												</div>
+											</div>
+											<div class="swiper-slide"> 
+												<div class="item-img relative">
+													<div class="image ratio:pt-[640_600] img-ratio"> <img src="./img/2.jpg" alt=""></div>
+													<div class="btn-play-icon"><a class="flex-center gap-3" href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox>
+															<div class="icon"> </div>
+															<div class="text text-lg font-normal text-white">Phát video</div></a></div>
+												</div>
+											</div>
+											<div class="swiper-slide"> 
+												<div class="item-img relative">
+													<div class="image ratio:pt-[640_600] img-ratio"> <img src="./img/2.jpg" alt=""></div>
+													<div class="btn-play-icon"><a class="flex-center gap-3" href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox>
+															<div class="icon"> </div>
+															<div class="text text-lg font-normal text-white">Phát video</div></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col lg:w-7/12">
+							<div class="wrap-slide-right"> 
+								<div class="cols-home-content relative">
+									<div class="global-pagination-style-1"> 
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="swiper"> 
+										<div class="swiper-wrapper"> 
+											<div class="swiper-slide"> 
+												<div class="item-content">
+													<h3>Experience the perfect blend</h3>
+													<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+												</div>
+											</div>
+											<div class="swiper-slide"> 
+												<div class="item-content">
+													<h3>Experience the perfect blend</h3>
+													<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+												</div>
+											</div>
+											<div class="swiper-slide"> 
+												<div class="item-content">
+													<h3>Experience the perfect blend</h3>
+													<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+												</div>
+											</div>
+											<div class="swiper-slide"> 
+												<div class="item-content">
+													<h3>Experience the perfect blend</h3>
+													<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="global-slider-style-2">
+										<div class="btn-next"> </div>
+										<div class="btn-prev"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="section-home-4"> 
+				<div class="container">
+					<h2 class="text-3xl lg:text-6xl text-center font-bold mb-10 text-black">We Provide Amazing Web Design Solutions</h2>
+					<div class="grid sm:grid-cols-2 gap-6">
+						<div class="item text-black p-10 flex gap-8 bg-primary-4 rounded-xl"> 
+							<div class="icon"> <img class="rem:w-[80px] rem:h-[80px] brightness-[0%]" src="./img/ico.png" alt=""></div>
+							<div class="content flex flex-col gap-4">
+								<h3 class="text-24 font-bold">Digital Strategy Planning</h3>
+								<div class="desc line-clamp-2">This strategy encompasses a wide range of activities, from online marketing and social media to website...</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item text-black p-10 flex gap-8 bg-primary-4 rounded-xl"> 
+							<div class="icon"> <img class="rem:w-[80px] rem:h-[80px] brightness-[0%]" src="./img/ico.png" alt=""></div>
+							<div class="content flex flex-col gap-4">
+								<h3 class="text-24 font-bold">Digital Strategy Planning</h3>
+								<div class="desc line-clamp-2">This strategy encompasses a wide range of activities, from online marketing and social media to website...</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item text-black p-10 flex gap-8 bg-primary-4 rounded-xl"> 
+							<div class="icon"> <img class="rem:w-[80px] rem:h-[80px] brightness-[0%]" src="./img/ico.png" alt=""></div>
+							<div class="content flex flex-col gap-4">
+								<h3 class="text-24 font-bold">Digital Strategy Planning</h3>
+								<div class="desc line-clamp-2">This strategy encompasses a wide range of activities, from online marketing and social media to website...</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item text-black p-10 flex gap-8 bg-primary-4 rounded-xl"> 
+							<div class="icon"> <img class="rem:w-[80px] rem:h-[80px] brightness-[0%]" src="./img/ico.png" alt=""></div>
+							<div class="content flex flex-col gap-4">
+								<h3 class="text-24 font-bold">Digital Strategy Planning</h3>
+								<div class="desc line-clamp-2">This strategy encompasses a wide range of activities, from online marketing and social media to website...</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<main class="ov-h">
+			<section class="section-home-5 relative section-large home-cols-6 hidden">
+				<div class="container"> 
+					<div class="content text-white">
+						<div class="caption">thông tin mô tả về đồ họa thuận yến</div>
+						<h2 class="title-48 mb-5 md:mb-0">Về đồ họa thuận yến</h2>
+						<div class="global-slider-style-3">
+							<div class="btn-next"></div>
+							<div class="btn-prev"></div>
+						</div>
+					</div>
+					<div class="wrap-real-video">
+						<div class="swiper relative">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item relative">
+										<div class="image img-ratio ratio:pt-[470_264] relative rounded-lg"> 
+											<p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1863880544450899%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-6 section-large">
+				<div class="container"> 
+					<div class="row">
+						<div class="col lg:w-5/12">
+							<div class="content text-white flex flex-col gap-4 mb-7 lg:mb-0"> 
+								<h3 class="text-4xl lg:text-5xl">Quality Service For Growth Your Branding</h3>
+								<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"> </div></a>
+							</div>
+						</div>
+						<div class="col lg:w-7/12">
+							<div class="wrap-list-item relative">
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div><a class="btn-sw btn-secondary" href="">
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div><a class="btn-sw btn-secondary" href="">
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div><a class="btn-sw btn-secondary" href="">
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div><a class="btn-sw btn-secondary" href="">
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-6-detail section-large">
+				<div class="container"> 
+					<div class="row">
+						<div class="col lg:w-5/12">
+							<div class="content text-white flex flex-col gap-4 mb-7 lg:mb-0"> 
+								<h3 class="text-4xl lg:text-5xl">Quality Service For Growth Your Branding</h3>
+								<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"> </div></a>
+							</div>
+						</div>
+						<div class="col lg:w-7/12">
+							<div class="wrap-list-item relative">
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div>
+										<div class="desc text-base font-normal text-white">Digital Strategy Planning Digital Strategy Planning</div>
+									</div>
+								</div>
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div>
+										<div class="desc text-base font-normal text-white">Digital Strategy Planning Digital Strategy Planning</div>
+									</div>
+								</div>
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div>
+										<div class="desc text-base font-normal text-white">Digital Strategy Planning Digital Strategy Planning</div>
+									</div>
+								</div>
+								<div class="item py-7 px-10 bg-primary-3 mb-5 relative z-1 overflow-hidden"> 
+									<div class="shape"><img src="./img/shape.png" alt=""></div>
+									<div class="image"> <img src="./img/sv.png" alt=""></div>
+									<div class="flex-between flex-wrap gap-3">
+										<div class="title text-24 font-bold text-white line-clamp-1 hover:text-primary-1">Digital Strategy Planning</div>
+										<div class="desc text-base font-normal text-white">Digital Strategy Planning Digital Strategy Planning</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-7 section-large">
+				<div class="container-fluid px-4 xl:px-20">
+					<div class="grid sm:grid-cols-2 gap-4 lg:gap-6">
+						<div class="box-item">
+							<div class="item">
+								<div class="image img-ratio ratio:pt-[1/1]"> <img src="./img/banner.jpg" alt=""></div>
+								<div class="content"> <span>Digital - Design</span>
+									<h3><a href="">UI/UX Design & Website Development</a></h3>
+									<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href=""> 
+										<div class="text">Xem Thêm</div>
+										<div class="icon"></div></a>
+								</div>
+							</div>
+						</div>
+						<div class="box-item">
+							<div class="grid grid-cols-2 gap-4 lg:gap-6">
+								<div class="item"> 
+									<div class="image img-ratio ratio:pt-[1/1]"> <img src="./img/banner.jpg" alt=""></div>
+									<div class="content"> <span>Digital - Design</span>
+										<h3> <a href="">UI/UX Design & Website Development</a></h3>
+										<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href=""> 
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+								<div class="item"> 
+									<div class="image img-ratio ratio:pt-[1/1]"> <img src="./img/banner.jpg" alt=""></div>
+									<div class="content"> <span>Digital - Design</span>
+										<h3> <a href="">UI/UX Design & Website Development</a></h3>
+										<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href=""> 
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+								<div class="item"> 
+									<div class="image img-ratio ratio:pt-[1/1]"> <img src="./img/banner.jpg" alt=""></div>
+									<div class="content"> <span>Digital - Design</span>
+										<h3> <a href="">UI/UX Design & Website Development</a></h3>
+										<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href=""> 
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+								<div class="item"> 
+									<div class="image img-ratio ratio:pt-[1/1]"> <img src="./img/banner.jpg" alt=""></div>
+									<div class="content"> <span>Digital - Design</span>
+										<h3> <a href="">UI/UX Design & Website Development</a></h3>
+										<div class="desc">Digital agency companies cater to businesses of all sizes and industries, from startups and small businesses to large enterprises.</div><a class="btn btn-primary w-fit" href=""> 
+											<div class="text">Xem Thêm</div>
+											<div class="icon"></div></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-banner-video">
+				<div class="banner-page-home relative">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item relative">
+									<div class="image img-ratio ratio:pt-[850_1920] img-zoom"><img src="./img/1.png" alt=""></div>
+									<div class="wrap-btn-play"><a class="btn-play" href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox>
+											<div class="icon"></div></a></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item relative">
+									<div class="image img-ratio ratio:pt-[850_1920] img-zoom"><img src="./img/1.png" alt=""></div>
+									<div class="wrap-btn-play"><a class="btn-play" href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox>
+											<div class="icon"></div></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-detail-content">
+				<div class="container"> </div>
+			</section>
+			<section class="section-home-8 section-large bg-primary-3">
+				<div class="container"> 
+					<h2 class="text-3xl lg:rem:text-[42px] text-center text-white font-bold mb-10">Khóa học thế kế sân khấu sư kiên mô phỏng 3D</h2>
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+						<div class="item-box rounded-lg overflow-hidden">
+							<div class="image ratio:pt-[276_440] img-ratio"><img src="./img/img-1.jpg" alt=""></div>
+							<div class="content h-full text-white flex flex-col gap-4 p-4 bg-primary-2">
+								<h3 class="title-20 line-clamp-2"><a href="">Sketchup – Depence R3 – M.a </a></h3>
+								<div class="caption text-base font-normal line-clamp-4">Thiết kế sân khấu, sự kiện, Booth Activation với Sketchup và Depence R3 Timecode Lighting Show, Render hình ảnh và Video là giải phái tối ưu nhất cho các bạn</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item-box rounded-lg overflow-hidden">
+							<div class="image ratio:pt-[276_440] img-ratio"><img src="./img/img-1.jpg" alt=""></div>
+							<div class="content h-full text-white flex flex-col gap-4 p-4 bg-primary-2">
+								<h3 class="title-20 line-clamp-2"><a href="">Sketchup – Depence R3 – M.a </a></h3>
+								<div class="caption text-base font-normal line-clamp-4">Thiết kế sân khấu, sự kiện, Booth Activation với Sketchup và Depence R3 Timecode Lighting Show, Render hình ảnh và Video là giải phái tối ưu nhất cho các bạn</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item-box rounded-lg overflow-hidden">
+							<div class="image ratio:pt-[276_440] img-ratio"><img src="./img/img-1.jpg" alt=""></div>
+							<div class="content h-full text-white flex flex-col gap-4 p-4 bg-primary-2">
+								<h3 class="title-20 line-clamp-2"><a href="">Sketchup – Depence R3 – M.a </a></h3>
+								<div class="caption text-base font-normal line-clamp-4">Thiết kế sân khấu, sự kiện, Booth Activation với Sketchup và Depence R3 Timecode Lighting Show, Render hình ảnh và Video là giải phái tối ưu nhất cho các bạn</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item-box rounded-lg overflow-hidden">
+							<div class="image ratio:pt-[276_440] img-ratio"><img src="./img/img-1.jpg" alt=""></div>
+							<div class="content h-full text-white flex flex-col gap-4 p-4 bg-primary-2">
+								<h3 class="title-20 line-clamp-2"><a href="">Sketchup – Depence R3 – M.a </a></h3>
+								<div class="caption text-base font-normal line-clamp-4">Thiết kế sân khấu, sự kiện, Booth Activation với Sketchup và Depence R3 Timecode Lighting Show, Render hình ảnh và Video là giải phái tối ưu nhất cho các bạn</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item-box rounded-lg overflow-hidden">
+							<div class="image ratio:pt-[276_440] img-ratio"><img src="./img/img-1.jpg" alt=""></div>
+							<div class="content h-full text-white flex flex-col gap-4 p-4 bg-primary-2">
+								<h3 class="title-20 line-clamp-2"><a href="">Sketchup – Depence R3 – M.a </a></h3>
+								<div class="caption text-base font-normal line-clamp-4">Thiết kế sân khấu, sự kiện, Booth Activation với Sketchup và Depence R3 Timecode Lighting Show, Render hình ảnh và Video là giải phái tối ưu nhất cho các bạn</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+						<div class="item-box rounded-lg overflow-hidden">
+							<div class="image ratio:pt-[276_440] img-ratio"><img src="./img/img-1.jpg" alt=""></div>
+							<div class="content h-full text-white flex flex-col gap-4 p-4 bg-primary-2">
+								<h3 class="title-20 line-clamp-2"><a href="">Sketchup – Depence R3 – M.a </a></h3>
+								<div class="caption text-base font-normal line-clamp-4">Thiết kế sân khấu, sự kiện, Booth Activation với Sketchup và Depence R3 Timecode Lighting Show, Render hình ảnh và Video là giải phái tối ưu nhất cho các bạn</div><a class="btn-sw btn-secondary" href="">
+									<div class="text">Xem thêm</div>
+									<div class="icon"></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-9 section-large"> 
+				<div class="container"> 
+					<div class="wrap-title text-white flex items-center justify-between pb-10"> 
+						<h2 class="text-3xl lg:text-6xl font-bold">Our Best AI Solutions</h2><a class="btn btn-primary" href="">
+							<div class="text">Xem Thêm</div>
+							<div class="icon"></div></a>
+					</div>
+					<div class="grid lg:grid-cols-2 gap-10">
+						<div class="col-left text-white">
+							<div class="wrap-content flex flex-col gap-4">
+								<div class="item">
+									<div class="accordion-title" data-image="./img/img-1.jpg">
+										<div class="title"> What services does your agency provide?</div>
+										<div class="icon"> <i class="fa-light fa-plus"></i></div>
+									</div>
+									<div class="accordion-content">
+										<div class="content">and development, UX/UI design, social media marketing, digital advertising, video production, and content creation.</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="accordion-title" data-image="./img/banner.jpg">
+										<div class="title"> What services does your agency provide?</div>
+										<div class="icon"> <i class="fa-light fa-plus"></i></div>
+									</div>
+									<div class="accordion-content">
+										<div class="content">and development, UX/UI design, social media marketing, digital advertising, video production, and content creation.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-right">
+							<div class="faq-image ratio:pt-[1/1] img-ratio rounded-xl overflow-hidden duration-500 transition-all"><img src="./img/img-1.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-10 section-large">
+				<div class="container">
+					<div class="flex-between gap-4 text-white mb-7">
+						<div class="wrap">
+							<div class="sub-title tex-lg text-primary-1 font-bold">Đồ Họa Thuận Yến</div>
+							<h2 class="text-3xl lg:text-6xl">Our methodology</h2>
+						</div>
+						<div class="circle hidden">
+							<div class="logo" style="background-image: url('./img/favicon.jpg')"></div>
+						</div>
+					</div>
+					<div class="grid lg:grid-cols-2 gap-10">
+						<div class="col-left relative overflow-hidden">
+							<div class="image-main w-full h-full bg-no-repeat bg-contain lg:bg-cover bg-center" style="background-image: url('./img/cicrle.png')"><img src="./img/2.jpg" alt=""></div>
+						</div>
+						<div class="col-right text-white">
+							<h2 class="title-3xl">Our methodology</h2>
+							<div class="desc text-base mb-3">We begin by getting to know you and your brand. Through in-depth conversations, research, and analysis.</div>
+							<div class="wrap-image-video relative">
+								<div class="image img-ratio ratio:pt-[426_680] rounded-xl"> <img src="./img/img-1.jpg" alt=""></div>
+								<div class="wrap-btn-play"><a href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox> 
+										<div class="icon"></div></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-cols-3 section-large">
+				<div class="container"> 
+					<div class="content text-white flex items-center justify-between pb-10"> 
+						<h2 class="text-3xl lg:text-6xl font-bold">Our Best AI Solutions</h2><a class="btn btn-primary" href="">
+							<div class="text">Xem Thêm</div>
+							<div class="icon"></div></a>
+					</div>
+				</div>
+				<div class="border border-[rgba(255,255,255,0.1)] border-b"></div>
+				<div class="container"> 
+					<div class="home-cols-3 pt-10">
+						<div class="wrap-layout-3 relative"> 
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="item"> 
+											<div class="image img-ratio ratio:pt-[272_358]"><img src="./img/img-1.jpg" alt=""></div>
+											<div class="content flex flex-col gap-2 text-white pt-5"> <a href=""> 
+													<h3 class="title-20">Stellar Tech Solutions</h3></a>
+												<div class="desc text-base line-clamp-2">We redesigned Stellar Tech’s website to enhance.</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item"> 
+											<div class="image img-ratio ratio:pt-[272_358]"><img src="./img/img-1.jpg" alt=""></div>
+											<div class="content flex flex-col gap-2 text-white pt-5"> <a href=""> 
+													<h3 class="title-20">Stellar Tech Solutions</h3></a>
+												<div class="desc text-base line-clamp-2">We redesigned Stellar Tech’s website to enhance.</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item"> 
+											<div class="image img-ratio ratio:pt-[272_358]"><img src="./img/img-1.jpg" alt=""></div>
+											<div class="content flex flex-col gap-2 text-white pt-5"> <a href=""> 
+													<h3 class="title-20">Stellar Tech Solutions</h3></a>
+												<div class="desc text-base line-clamp-2">We redesigned Stellar Tech’s website to enhance.</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item"> 
+											<div class="image img-ratio ratio:pt-[272_358]"><img src="./img/img-1.jpg" alt=""></div>
+											<div class="content flex flex-col gap-2 text-white pt-5"> <a href=""> 
+													<h3 class="title-20">Stellar Tech Solutions</h3></a>
+												<div class="desc text-base line-clamp-2">We redesigned Stellar Tech’s website to enhance.</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="global-slider-style-1"> 
+								<div class="btn-next"></div>
+								<div class="btn-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-counter section-large">
+				<div class="container"> 
+					<h2 class="text-3xl lg:text-6xl font-bold text-white">Con số nổi bật của đồ họa thuận yến</h2>
+					<div class="desc text-base text-white text-start pb-10">We begin by getting to know you and your brand. Through in-depth conversations, research, and analysis.</div>
+					<div class="grid grid-cols-6 lg:grid-cols-12 gap-10 relative">
+						<div class="col-span-3 lg:col-span-3 relative">
+							<div class="box-item"> 
+								<div class="number rem:text-[40px] font-bold text-white flex items-center gap-3"><span class="countup" data-number="200">200</span><span class="action">+</span></div>
+								<div class="caption text-base font-bold text-primary-1 pb-3 font-secondary">Cửa hàng trên toàn quốc</div>
+							</div>
+						</div>
+						<div class="col-span-3 lg:col-span-3 relative">
+							<div class="box-item"> 
+								<div class="number rem:text-[40px] font-bold text-white flex items-center gap-3"><span class="countup" data-number="200">200</span><span class="action">+</span></div>
+								<div class="caption text-base font-bold text-primary-1 pb-3 font-secondary">Cửa hàng trên toàn quốc</div>
+							</div>
+						</div>
+						<div class="col-span-3 lg:col-span-3 relative">
+							<div class="box-item"> 
+								<div class="number rem:text-[40px] font-bold text-white flex items-center gap-3"><span class="countup" data-number="200">200</span><span class="action">+</span></div>
+								<div class="caption text-base font-bold text-primary-1 pb-3 font-secondary">Cửa hàng trên toàn quốc</div>
+							</div>
+						</div>
+						<div class="col-span-3 lg:col-span-3 relative">
+							<div class="box-item"> 
+								<div class="number rem:text-[40px] font-bold text-white flex items-center gap-3"><span class="countup" data-number="200">200</span><span class="action">+</span></div>
+								<div class="caption text-base font-bold text-primary-1 pb-3 font-secondary">Cửa hàng trên toàn quốc</div>
+							</div>
+						</div>
+						<div class="counter-highlight">
+							<div class="image relative"><img src="./img/counter.png" alt="">
+								<div class="title text-xl font-bold text-white">con số <br> nổi bật</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-large">
+				<div class="container"> 
+					<h2 class="text-3xl lg:text-6xl font-bold text-white mb-10">Video</h2>
+					<div class="home-cols-2"> 
+						<div class="relative"> 
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="item-video relative">
+											<div class="image img-ratio ratio:pt-[426_680] img-zoom rounded-lg overflow-hidden"><img src="./img/1.png" alt=""></div>
+											<div class="wrap-btn-play"><a href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox> 
+													<div class="icon">	</div></a></div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-video relative">
+											<div class="image img-ratio ratio:pt-[426_680] img-zoom rounded-lg overflow-hidden"><img src="./img/1.png" alt=""></div>
+											<div class="wrap-btn-play"><a href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox> 
+													<div class="icon">	</div></a></div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-video relative">
+											<div class="image img-ratio ratio:pt-[426_680] img-zoom rounded-lg overflow-hidden"><img src="./img/1.png" alt=""></div>
+											<div class="wrap-btn-play"><a href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox> 
+													<div class="icon">	</div></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="global-slider-style-1"> 
+								<div class="btn-next"></div>
+								<div class="btn-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-project section-large">
+				<div class="container"> 
+					<h2 class="text-3xl lg:text-6xl font-bold text-white mb-10">Tác phẩm học viên</h2>
+					<div class="home-cols-project">
+						<div class="relative">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item-thumb"><a href="./img/2.jpg" data-fancybox="gallery"> 
+												<div class="image img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden"><img src="./img/2.jpg" alt=""></div></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="global-slider-style-1"> 
+								<div class="btn-next"></div>
+								<div class="btn-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-feedback section-large">
+				<div class="container"> 
+					<div class="content text-white mb-10">
+						<h2 class="text-3xl lg:text-6xl font-bold">Cảm nhận - Đánh giá</h2>
+						<div class="desc text-base">Mục đích của chúng tôi là phát triển mối quan hệ lâu dài với khách hàng và tiếp tục hỗ trợ họ trong mọi nỗ lực tài chính</div>
+					</div>
+					<div class="home-cols-3"> 
+						<div class="relative">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="item">
+											<div class="image-fb-top"><img src="./img/fb-1.png" alt=""></div>
+											<div class="image-fb-bottom"><img src="./img/fb-2.png" alt=""></div>
+											<div class="content"> 
+												<div class="desc line-clamp-7">"Là những nhà kinh doanh độc lập, chúng tôi đã phải vật lộn để nhận được sự hỗ trợ từ các ngân hàng và nhà môi giới, nhưng MCT đã vào cuộc. Họ hiểu được hoàn cảnh của chúng tôi, dẫn đến số tiền vay cao hơn và đảm bảo được ngôi nhà mơ ước của chúng tôi"</div>
+												<div class="profile"> 
+													<div class="avatar"><img src="./img/ico-1.png" alt=""></div>
+													<div class="info">
+														<div class="title">Amanda</div>
+														<div class="caption">28 tuổi - Nhân viên thiết kế</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item">
+											<div class="image-fb-top"><img src="./img/fb-1.png" alt=""></div>
+											<div class="image-fb-bottom"><img src="./img/fb-2.png" alt=""></div>
+											<div class="content"> 
+												<div class="desc line-clamp-7">"Là những nhà kinh doanh độc lập, chúng tôi đã phải vật lộn để nhận được sự hỗ trợ từ các ngân hàng và nhà môi giới, nhưng MCT đã vào cuộc. Họ hiểu được hoàn cảnh của chúng tôi, dẫn đến số tiền vay cao hơn và đảm bảo được ngôi nhà mơ ước của chúng tôi"</div>
+												<div class="profile"> 
+													<div class="avatar"><img src="./img/ico-1.png" alt=""></div>
+													<div class="info">
+														<div class="title">Amanda</div>
+														<div class="caption">28 tuổi - Nhân viên thiết kế</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item">
+											<div class="image-fb-top"><img src="./img/fb-1.png" alt=""></div>
+											<div class="image-fb-bottom"><img src="./img/fb-2.png" alt=""></div>
+											<div class="content"> 
+												<div class="desc line-clamp-7">"Là những nhà kinh doanh độc lập, chúng tôi đã phải vật lộn để nhận được sự hỗ trợ từ các ngân hàng và nhà môi giới, nhưng MCT đã vào cuộc. Họ hiểu được hoàn cảnh của chúng tôi, dẫn đến số tiền vay cao hơn và đảm bảo được ngôi nhà mơ ước của chúng tôi"</div>
+												<div class="profile"> 
+													<div class="avatar"><img src="./img/ico-1.png" alt=""></div>
+													<div class="info">
+														<div class="title">Amanda</div>
+														<div class="caption">28 tuổi - Nhân viên thiết kế</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="item">
+											<div class="image-fb-top"><img src="./img/fb-1.png" alt=""></div>
+											<div class="image-fb-bottom"><img src="./img/fb-2.png" alt=""></div>
+											<div class="content"> 
+												<div class="desc line-clamp-7">"Là những nhà kinh doanh độc lập, chúng tôi đã phải vật lộn để nhận được sự hỗ trợ từ các ngân hàng và nhà môi giới, nhưng MCT đã vào cuộc. Họ hiểu được hoàn cảnh của chúng tôi, dẫn đến số tiền vay cao hơn và đảm bảo được ngôi nhà mơ ước của chúng tôi"</div>
+												<div class="profile"> 
+													<div class="avatar"><img src="./img/ico-1.png" alt=""></div>
+													<div class="info">
+														<div class="title">Amanda</div>
+														<div class="caption">28 tuổi - Nhân viên thiết kế</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="global-slider-style-1"> 
+								<div class="btn-next"></div>
+								<div class="btn-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-image-pause section-large">
+				<div class="container"> 
+					<div class="content text-white mb-10">
+						<h2 class="text-3xl lg:text-6xl font-bold">Sản phẩm nổi bật của học viên</h2>
+						<div class="desc text-base">Mục đích của chúng tôi là phát triển mối quan hệ lâu dài với khách hàng và tiếp tục hỗ trợ họ trong mọi nỗ lực tài chính</div>
+					</div>
+					<div class="wrapper-image-hover">
+						<div class="item"> 
+							<div class="image"><img src="./img/img-1.jpg" alt=""></div>
+						</div>
+						<div class="item"> 
+							<div class="image"><img src="./img/img-1.jpg" alt=""></div>
+						</div>
+						<div class="item"> 
+							<div class="image"><img src="./img/img-1.jpg" alt=""></div>
+						</div>
+						<div class="item"> 
+							<div class="image"><img src="./img/img-1.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-home-about section-large"> 
+				<div class="container"> 
+					<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+						<div class="col-left">
+							<div class="wrap-image relative"> 
+								<div class="image img-ratio ratio:pt-[1_1] rounded-xl overflow-hidden"><img src="./img/1.png" alt=""></div>
+								<div class="wrap-btn-play"><a href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox> 
+										<div class="icon"> </div></a></div>
+							</div>
+						</div>
+						<div class="col-right">
+							<div class="content">
+								<h2 class="text-3xl lg:text-6xl font-bold mb-3">Đồ Họa Thuận Yến Đào tạo - Thiết kế</h2>
+								<div class="desc format-content">Cập nhật kiến thức ngành học sân khấu, sự kiện theo công nghệ tiên tiến của thế giới đó chính là cơ hội lớn nhất của các bạn và Đồ họa Thuận Yến luôn phát triển với sứ mệnh đó. Nếu bạn đã sẵn sàng khẳng định mình trong lĩnh vực Event, hãy bắt đầu hành trình với chúng tôi để nắm bắt những cơ hội đang chờ đón bạn trong tương lai!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-logo section-large"> 
+				<div class="home-cols-brand">
+					<div class="swiper">
+						<div class="swiper-wrapper"> 
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<div class="image rem:w-[150px] rem:h-[55px] zoom-img"><img class="w-full h-full object-cover" src="./img/1.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-single-detail-about section-large"> 
+				<div class="container"> 
+					<h2 class="title-48 text-center mb-10 text-black">Đồ Họa Thuận Yến Đào tạo - Thiết kế</h2>
+					<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+						<div class="col-left">
+							<div class="wrap-image relative"> 
+								<div class="image img-ratio ratio:pt-[369_656] rounded-xl overflow-hidden"><img src="./img/1.png" alt=""></div>
+								<div class="wrap-btn-play"><a href="https://www.youtube.com/watch?v=9qTr1CGFYLg" data-fancybox> 
+										<div class="icon"> </div></a></div>
+							</div>
+						</div>
+						<div class="col-right">
+							<div class="content">
+								<div class="desc format-content">Cập nhật kiến thức ngành học sân khấu, sự kiện theo công nghệ tiên tiến của thế giới đó chính là cơ hội lớn nhất của các bạn và Đồ họa Thuận Yến luôn phát triển với sứ mệnh đó. Nếu bạn đã sẵn sàng khẳng định mình trong lĩnh vực Event, hãy bắt đầu hành trình với chúng tôi để nắm bắt những cơ hội đang chờ đón bạn trong tương lai!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-single-faq section-large">
+				<div class="container">
+					<h2 class="title-48 text-center mb-10 text-black">Câu hỏi thường gặp</h2>
+					<div class="row">
+						<div class="col md:w-6/12">
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+						</div>
+						<div class="col md:w-6/12">
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+							<div class="wrap-faq bg-primary-4 p-5 rounded-xl">
+								<div class="flex-between wrap-heading cursor-pointer gap-4">
+									<h6 class="title-20 title-faq"> Khi nào có thể bắt đầu khóa học ?</h6>
+									<div class="icon"><i class="fa-solid fa-plus text-lg font-light"></i></div>
+								</div>
+								<div class="content text-base desc mt-3">Tại Đồ họa Thuận Yến hình hình học tại lớp hoặc Online đều là kèm học với thời gian linh động cho nên đăng ký và học ngay mà không cần mất thời gian đợi mở lớp.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-single-overview section-large">
+				<div class="container">
+					<h2 class="title-48 text-center mb-10 text-black">Giới thiệu khóa học</h2>
+					<div class="grid lg:grid-cols-2 gap-10 items-center mb-10 last:mb-0">
+						<div class="item">
+							<h3 class="title-24 text-primary-1 text-center">MODULE 1 (Phần 1, 2)</h3>
+							<div class="content">
+								<h6 class="title-20 text-black text-center"> KẾT QUẢ ĐẠT ĐƯỢC</h6>
+								<div class="desc format-content"> Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.</div>
+							</div>
+						</div>
+						<div class="item">
+							<h3 class="title-24 text-primary-1 text-center">MODULE 1 (Phần 1, 2)</h3>
+							<div class="content">
+								<h6 class="title-20 text-black text-center"> KẾT QUẢ ĐẠT ĐƯỢC</h6>
+								<div class="desc format-content"> Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid lg:grid-cols-2 gap-10 items-center mb-10 last:mb-0">
+						<div class="item">
+							<h3 class="title-24 text-primary-1 text-center">MODULE 1 (Phần 1, 2)</h3>
+							<div class="content">
+								<h6 class="title-20 text-black text-center"> KẾT QUẢ ĐẠT ĐƯỢC</h6>
+								<div class="desc format-content"> Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.</div>
+							</div>
+						</div>
+						<div class="item">
+							<h3 class="title-24 text-primary-1 text-center">MODULE 1 (Phần 1, 2)</h3>
+							<div class="content">
+								<h6 class="title-20 text-black text-center"> KẾT QUẢ ĐẠT ĐƯỢC</h6>
+								<div class="desc format-content"> Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid lg:grid-cols-2 gap-10 items-center mb-10 last:mb-0">
+						<div class="item">
+							<h3 class="title-24 text-primary-1 text-center">MODULE 1 (Phần 1, 2)</h3>
+							<div class="content">
+								<h6 class="title-20 text-black text-center"> KẾT QUẢ ĐẠT ĐƯỢC</h6>
+								<div class="desc format-content"> Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.</div>
+							</div>
+						</div>
+						<div class="item">
+							<h3 class="title-24 text-primary-1 text-center">MODULE 1 (Phần 1, 2)</h3>
+							<div class="content">
+								<h6 class="title-20 text-black text-center"> KẾT QUẢ ĐẠT ĐƯỢC</h6>
+								<div class="desc format-content"> Hiểu và áp dụng đúng Workflow D5 Render trong thiết kế sân khấu sự kiện. Tự tin thao tác trong không gian 3D và quản lý dự án sân khấu hiệu quả. Kết nối linh hoạt D5 Render với các phần mềm 3D.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="text-black section-large pb-0 bg-primary-4">
+			<div class="container"> 
+				<div class="row gap-5 lg:gap-0 pb-10">
+					<div class="col lg:w-3/12">
+						<div class="footer-column-1">
+							<div class="logo-footer"><img src="./img/logo.png" alt=""></div>
+							<div class="caption text-lg font-medium">Đồ Họa Thuận Yến luôn tự hào là đơn vị tiên phong đã đào tạo hàng ngàn học viên cho các công ty chuyên ngành.</div>
+							<div class="list-contact">
+								<ul>
+									<li><a href=""><i class="fa-light fa-location-dot"> </i>20/6 Đồng Xoài, Phường 13, Quận Tân Bình, Tp. HCM</a></li>
+									<li><a href=""><i class="fa-light fa-location-dot"> </i>20/6 Đồng Xoài, Phường 13, Quận Tân Bình, Tp. HCM</a></li>
+									<li><a href=""><i class="fa-light fa-location-dot"> </i>20/6 Đồng Xoài, Phường 13, Quận Tân Bình, Tp. HCM</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col lg:w-3/12">
+						<div class="footer-column-2"> 
+							<h3>Khóa học chuyên sâu</h3>
+							<div class="footer-menu-2"> 
+								<ul>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col lg:w-3/12">
+						<div class="footer-column-3">
+							<h3>Khóa học chuyên sâu</h3>
+							<div class="footer-menu-3">
+								<ul>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+									<li><a href=""> Thiết kế Timecode Lighting show sân khấu, sự kiện </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col lg:w-3/12">
+						<div class="footer-column-4"> 
+							<h3 class="text-24 font-bold">Follow Thuận Yến</h3>
+							<div class="form-contact-footer">
+								<div class="form-group">
+									<input type="text" placeholder="Số điện thoại">
+									<button type="submit">
+										 <i class="fa-light fa-paper-plane-top"></i></button>
+								</div>
+							</div>
+							<div class="list-social">
+								<ul>
+									<li> <a href=""><img src="./img/ico-1.png" alt=""></a></li>
+									<li> <a href=""><img src="./img/ico-1.png" alt=""></a></li>
+									<li> <a href=""><img src="./img/ico-1.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="coppy-right py-8 text-center border-neutral-300 border-t">
+				<div class="container"> <span>Copyright@ 1999 - 2022, All right reserved - Website: Trung tâm đồ họa Thuận Yến Chính sách bảo mật thông tin đã được đăng ký bản quyền bởi DMCA, RAPIDSSL, BỘ CÔNG THƯƠNG, xin vui lòng ghi rõ nguồn https://www.dohoathuanyen.vn/ khi Copy nội dung từ trang Web này</span></div>
+			</div>
+		</footer>
 		<div class="wrap-scroll-top"> 
 			<div id="fixed-tool"> <a class="icon-action" id="backtop">
 					 <i class="fa-sharp fa-light fa-arrow-up"></i></a><a class="icon-action" href="">

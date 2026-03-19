@@ -1,0 +1,14 @@
+section.section-project.section-large.section-trainees-1
+	.container 
+		h2(class="title-48 text-black text-center mb-10") Tác phẩm học viên
+		.home-cols-project
+			-for(j=0;j<3;j++)
+				.relative.item(class="mb-10 last:mb-0")
+					.swiper
+						.swiper-wrapper
+							-for(i=0;i<10;i++)
+								.swiper-slide
+									.item-thumb
+										a(href="#") 
+											.image(class="img-ratio ratio:pt-[1/1] im-zoom rounded-lg overflow-hidden")
+												img(src="./img/2.jpg", alt="")

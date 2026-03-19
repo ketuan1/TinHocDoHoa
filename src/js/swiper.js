@@ -162,36 +162,52 @@ export default function swiperInit() {
 	});
 
 	//swiper grid
+	const swiperObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			const swiperInstance = entry.target.swiper;
+
+			if (entry.isIntersecting) {
+				if (swiperInstance && swiperInstance.autoplay) {
+					swiperInstance.autoplay.start();
+				}
+			} else {
+				if (swiperInstance && swiperInstance.autoplay) {
+					swiperInstance.autoplay.stop();
+				}
+			}
+		});
+	}, {
+		threshold: 0.7
+	});
+
 	$(".home-cols-project .swiper").each(function () {
-		new Swiper(this, {
+		const $this = $(this);
+		const swiper = new Swiper(this, {
 			modules: [Pagination, Autoplay, Navigation, Grid],
 			slidesPerView: 2,
 			spaceBetween: 20,
-			autoplay: {
-				delay: 4000,
-			},
+			autoplay: false,
 			loop: true,
 			grid: {
-			rows: 2, // 2 hàng
-			fill: 'row', // mặc định, điền hàng trước
-		},
+				rows: 2,
+				fill: 'row',
+			},
 			pagination: {
-				el: $(this).closest('.home-cols-project').find('.swiper-pagination')[0],
+				el: $this.closest('.home-cols-project').find('.swiper-pagination')[0],
 				clickable: true,
 			},
 			navigation: {
-				nextEl: $(this).closest(".home-cols-project").find(".btn-next")[0],
-				prevEl: $(this).closest(".home-cols-project").find(".btn-prev")[0],
+				nextEl: $this.closest(".home-cols-project").find(".btn-next")[0],
+				prevEl: $this.closest(".home-cols-project").find(".btn-prev")[0],
 			},
 			breakpoints: {
-				//768: {
-				//	slidesPerView: 3,
-				//},
 				1200: {
 					slidesPerView: 4,
 				},
 			},
 		});
+
+		swiperObserver.observe(this);
 	});
 	//end
 
@@ -237,50 +253,50 @@ export default function swiperInit() {
 
 	// swiper cards
 	var swiperCards = new Swiper(".cols-home-thumb .swiper", {
-			modules: [Pagination, Autoplay, Navigation],
-			effect: "slide",
-			slidesPerView: 1,
-			//loop: true,
-			//initialSlide: 0,
-			allowTouchMove: true,
-			speed: 800,
-		});
+		modules: [Pagination, Autoplay, Navigation],
+		effect: "slide",
+		slidesPerView: 1,
+		//loop: true,
+		//initialSlide: 0,
+		allowTouchMove: true,
+		speed: 800,
+	});
 	var swiperCardsText = new Swiper(".cols-home-content .swiper", {
-			modules: [Pagination, Autoplay, Navigation],
-			effect: "slide", 
-			slidesPerView: 1,
-			//loop: true,
-			slideShadows: false,
-			allowTouchMove: true,
-			speed: 800,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-				type: "fraction",
-				renderFraction: function (currentClass, totalClass) {
-					return '<span class="' + currentClass + '"></span><span class="' + totalClass + '"></span>';
-				},
-				formatFractionCurrent: function (number) {
-					return number < 10 ? "0" + number + "/" : number + "/";
-				},
-				formatFractionTotal: function (number) {
-					return number < 10 ? "0" + number : number;
-				}
+		modules: [Pagination, Autoplay, Navigation],
+		effect: "slide",
+		slidesPerView: 1,
+		//loop: true,
+		slideShadows: false,
+		allowTouchMove: true,
+		speed: 800,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			type: "fraction",
+			renderFraction: function (currentClass, totalClass) {
+				return '<span class="' + currentClass + '"></span><span class="' + totalClass + '"></span>';
 			},
-			navigation: {
-				nextEl: ".cols-home-content .btn-prev",
-				prevEl: ".cols-home-content .btn-next",
+			formatFractionCurrent: function (number) {
+				return number < 10 ? "0" + number + "/" : number + "/";
 			},
-		});
+			formatFractionTotal: function (number) {
+				return number < 10 ? "0" + number : number;
+			}
+		},
+		navigation: {
+			nextEl: ".cols-home-content .btn-prev",
+			prevEl: ".cols-home-content .btn-next",
+		},
+	});
 
-		// Sync navigation between swipers
-		swiperCards.on('slideChange', function () {
-			swiperCardsText.slideTo(swiperCards.activeIndex);
-		});
+	// Sync navigation between swipers
+	swiperCards.on('slideChange', function () {
+		swiperCardsText.slideTo(swiperCards.activeIndex);
+	});
 
-		swiperCardsText.on('slideChange', function () {
-			swiperCards.slideTo(swiperCardsText.activeIndex);
-		});
+	swiperCardsText.on('slideChange', function () {
+		swiperCards.slideTo(swiperCardsText.activeIndex);
+	});
 	//end
 
 }

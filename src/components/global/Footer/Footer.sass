@@ -55,6 +55,14 @@ footer
 							@apply rem:w-[25px] rem:h-[25px]
 .wrap-scroll-top
 	#fixed-tool
-		@apply fixed cursor-pointer grid z-[999] right-2.5 bottom-[100px]
+		@apply fixed cursor-pointer grid z-[999] rem:right-[20px] rem:bottom-[100px] gap-5
+		#backtop
+			@apply rounded-xl
 		.icon-action
-			@apply items-center bg-primary-1 flex w-[50px] h-[50px] justify-center duration-[0.15s] transition-all ease-in-out text-black mt-2.5 rounded-[50%]
+			@apply flex-center bg-primary-1 text-white relative
+			@apply transition-all duration-300 rem:w-[50px] rem:h-[50px] rounded-[50%]
+			img
+				@apply rem:w-[30px] rem:h-[30px] object-cover
+
+.social-left
+	@apply fixed left-0 rem:bottom-[100px] z-1000

@@ -8,7 +8,7 @@ $(document).ready(function () {
 	header.init();
 	swiperInit();
 	FAQ();
-	// Scroll_Top();
+	buttonToTop();
 	CounterUps();
 	ListNavTab();
 	AccordionImg();

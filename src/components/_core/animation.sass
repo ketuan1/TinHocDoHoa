@@ -7,15 +7,27 @@
 		transition: .5s all ease-in-out !important
 .ring-food
 	animation: 1.5s ring-food infinite ease-in-out alternate
-.ring-chili
-	animation: 1.5s ring-chili infinite ease-in-out alternate
+.ring-phone
+	animation: ring-phone-chili 3s infinite linear
+.zoom-phone
+	box-shadow: 0 0 0 0 #f73936
+	animation: zoom-phone 1.5s infinite ease-in-out
 .ring-food-footer
 	animation: 1.5s ring-food-footer infinite ease-in-out alternate
-@keyframes ring-chili
-	0%
-		transform: rotate(8deg)
+@keyframes ring-phone-chili
+	0%, 30%, 57%, 100% 
+		transform: rotate(0deg)
+	33%, 39%, 45%, 51% 
+		transform: rotate(-15deg)
+	36%, 42%, 48%, 54% 
+		transform: rotate(15deg)
+
+@keyframes zoom-phone
+	70%
+		box-shadow: 0 0 0 15px transparent
 	100%
-		transform: rotate(-8deg)
+		box-shadow: 0 0 0 0 transparent
+		
 @keyframes ring-food-footer
 	0%
 		transform: rotate(4deg)

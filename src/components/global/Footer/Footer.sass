@@ -53,9 +53,10 @@ footer
 						img
 							filter: brightness(0%)
 							@apply rem:w-[25px] rem:h-[25px]
-.wrap-scroll-top
-	#fixed-tool
-		@apply fixed cursor-pointer grid z-[999] rem:right-[20px] rem:bottom-[100px] gap-5
+.wrap-scroll-top,
+.wrap-scroll-left
+	.fixed-tool
+		@apply fixed cursor-pointer grid z-[999] rem:right-[20px] rem:bottom-[5px] sm:rem:bottom-[100px] gap-5
 		#backtop
 			@apply rounded-xl
 		.icon-action
@@ -63,6 +64,31 @@ footer
 			@apply transition-all duration-300 rem:w-[50px] rem:h-[50px] rounded-[50%]
 			img
 				@apply rem:w-[30px] rem:h-[30px] object-cover
+.wrap-scroll-left
+	.fixed-tool
+		@apply rem:left-[20px] sm:rem:left-[35px] rem:bottom-[75px] sm:rem:bottom-[140px]
 
 .social-left
-	@apply fixed left-0 rem:bottom-[100px] z-1000
+	@apply fixed rem:left-[-15px] sm:left-0 rem:bottom-[90px] sm:rem:bottom-[150px] z-1000
+	.hotline-phone
+		//@apply rem:h-[100px]
+		.line-phone
+			@apply absolute
+			@apply border border-primary-1 transition-all duration-300 rounded-full bg-transparent
+			&.line-ring
+				@apply  rem:w-[90px] rem:h-[90px] rem:top-[10px] left-[10px]
+			&.line-circle	
+				//animation: phone-ring-circle 3s infinite ease-in-out		
+				@apply absolute rem:w-[60px] rem:h-[60px] rem:top-[25px] left-[25px] bg-primary-1
+		.line-img-circle
+			@apply absolute rem:top-[40px] rem:left-[45px] sm:rem:left-[40px]
+			a
+				@apply inline-block
+				img
+					@apply rem:w-[30px] rem:h-[30px] object-cover
+	.hotline-number
+		box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .1)
+		@apply absolute rem:top-[34px] rem:left-[65px] sm:rem:left-[58px] bg-primary-1 rem:rounded-[50px] text-white text-lg
+		@apply font-normal rem:w-[170px] rem:h-[40px] flex-center -z-1
+		a
+			@apply items-center
